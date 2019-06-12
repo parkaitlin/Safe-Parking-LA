@@ -1,19 +1,4 @@
-// object model for each resource
-// {
-//     programName: "N/A",
-//     spa: "N/A",
-//     operator: "N/A",
-//     city: "N/A",
-//     address: "N/A",
-//     website: "N/A",
-//     phone: "N/A",
-//     hours: "N/A",
-//     walkIn: boolean,
-//     eligibility: "N/A"
-// }
-
 const groceries = [
-[
 {
     "Updated by SPA Leadership": "N/A",
     "Program Name": "Free groceries ",
@@ -1182,5 +1167,4 @@ const groceries = [
     "Population Notes (Note if only a specific population is served) ": "N/A",
     "Notes": "N/A"
 }
-]
 ]

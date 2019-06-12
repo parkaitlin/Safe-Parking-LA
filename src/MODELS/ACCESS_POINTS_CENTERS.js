@@ -479,7 +479,7 @@ const accessCenters = [
       WEBSITE: "N/A",
       EMAIL: "N/A",
       PHONE_NUMBER: "N/A",
-      HOURS_OF_OPERATION: "Monday-Sunday: 8:00am-5:00pm",
+      HOURS_OF_OPERATION: "Monday-Sunday: `8:00am-5:00pm",
       WALK_IN: "Yes",
       ELIGIBILITY_REQUIREMENTS: "Transitioning Age Youth, Family, Adult",
     }
