@@ -6,11 +6,11 @@ import Home from './Home'
 import Test from '../components/TEST/test'
 import Navbar from './Navbar'
 
-
 /* Things Vianney is working on. Do not touch. */
 import Regions from '../components/TEST/regions'
 import ApplyForParking from '../components/ApplyForParking'
 
+import Footer from './Footer'
 import '../global.css'
 
 class App extends Component {
@@ -26,9 +26,7 @@ class App extends Component {
           <Route exact path={routes.RESOURCE} render={() => <Test />} />
           <Route exact path={routes.APPLYFORPARKING} render={() => <ApplyForParking />} />
         </Switch>
-        <h1>
-          <Regions />
-        </h1>
+        <Footer/>
       </div>
     )
 
