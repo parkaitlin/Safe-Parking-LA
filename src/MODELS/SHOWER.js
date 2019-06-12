@@ -320,7 +320,7 @@ const shower = [
     "Phone": "(661) 726-2850",
     "Hours of Operation": "9:00 am - 5:00 PM Monday through Friday",
     "Walk-Ins Allowed?": "No",
-    "Eligibility Requirements": "TAY, Family, Adult"
+    "Eligibility Requirements": "Transitioning Age Youth, Family, Adult"
   }
 ]
 ]

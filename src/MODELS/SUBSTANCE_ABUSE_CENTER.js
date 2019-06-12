@@ -475,7 +475,7 @@ const subAbuse = [[
     "Phone": "(800) 854-7771",
     "Hours of Operation": "Monday through Sunday, 24 hours per day",
     "Walk Ins Allowed?": "Yes",
-    "Eligibility Requirements": "TAY, Family, Adult",
+    "Eligibility Requirements": "Transitioning Age Youth, Family, Adult",
     "Notes": "N/A"
 },
 {

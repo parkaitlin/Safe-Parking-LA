@@ -206,7 +206,7 @@ const mentalHealth = [
     "Phone": "855-968-8452",
     "Hours of Operation": "7 Days a Week 9:30 am – 6:30 pm",
     "Walk-Ins Allowed?": "Yes",
-    "Eligibility Requirements": "TAY",
+    "Eligibility Requirements": "Transitioning Age Youth",
     "Notes ": "N/A"
   },
   {
@@ -221,7 +221,7 @@ const mentalHealth = [
     "Phone": "310-672-2208",
     "Hours of Operation": "Weekdays 8:30 am –12:00 pm, 1:00 – 5:00 pm",
     "Walk-Ins Allowed?": "Yes",
-    "Eligibility Requirements": "TAY",
+    "Eligibility Requirements": "Transitioning Age Youth",
     "Notes ": "N/A"
   },
   {
@@ -281,7 +281,7 @@ const mentalHealth = [
     "Phone": "(661)945-6736",
     "Hours of Operation": "9:00 am - 5:00 PM Monday through Friday",
     "Walk-Ins Allowed?": "Yes",
-    "Eligibility Requirements": "TAY, Family, Adult",
+    "Eligibility Requirements": "Transitioning Age Youth, Family, Adult",
     "Notes ": "N/A"
   },
   {
@@ -296,7 +296,7 @@ const mentalHealth = [
     "Phone": "(661) 726-2850",
     "Hours of Operation": "9:00 am - 5:00 PM Monday through Friday",
     "Walk-Ins Allowed?": "Yes",
-    "Eligibility Requirements": "TAY, Family, Adult",
+    "Eligibility Requirements": "Transitioning Age Youth, Family, Adult",
     "Notes ": "N/A"
   },
   {
@@ -311,7 +311,7 @@ const mentalHealth = [
     "Phone": "626-240-4500",
     "Hours of Operation": "M-F 7:00 am - 1:30pm ",
     "Walk-Ins Allowed?": "Yes",
-    "Eligibility Requirements": "Adults , TAY",
+    "Eligibility Requirements": "Adults , Transitioning Age Youth",
     "Notes ": "N/A"
   },
   {
@@ -401,7 +401,7 @@ const mentalHealth = [
     "Phone": "626-337-3828",
     "Hours of Operation": "M,T,Th 2pm-4pm",
     "Walk-Ins Allowed?": "Yes",
-    "Eligibility Requirements": "TAY",
+    "Eligibility Requirements": "Transitioning Age Youth",
     "Notes ": "N/A"
   },
   {
@@ -416,7 +416,7 @@ const mentalHealth = [
     "Phone": "909-267-5961",
     "Hours of Operation": "Monday 9am-5pm",
     "Walk-Ins Allowed?": "N/A",
-    "Eligibility Requirements": "TAY",
+    "Eligibility Requirements": "Transitioning Age Youth",
     "Notes ": "N/A"
   },
   {
@@ -431,7 +431,7 @@ const mentalHealth = [
     "Phone": "626-685-2197 x 7856",
     "Hours of Operation": "M-F 9am-5pm",
     "Walk-Ins Allowed?": "N/A",
-    "Eligibility Requirements": "TAY",
+    "Eligibility Requirements": "Transitioning Age Youth",
     "Notes ": "N/A"
   },
   {
@@ -446,7 +446,7 @@ const mentalHealth = [
     "Phone": "626-765-6010",
     "Hours of Operation": "M&F 9am-5pm; T&Th 11:30am-8:00 pm; Wed 11:30 -5:30 pm ",
     "Walk-Ins Allowed?": "N/A",
-    "Eligibility Requirements": "TAY",
+    "Eligibility Requirements": "Transitioning Age Youth",
     "Notes ": "N/A"
   },
   {
@@ -461,7 +461,7 @@ const mentalHealth = [
     "Phone": "909-802-1300",
     "Hours of Operation": "Th 9am - 5pm ",
     "Walk-Ins Allowed?": "N/A",
-    "Eligibility Requirements": "TAY",
+    "Eligibility Requirements": "Transitioning Age Youth",
     "Notes ": "N/A"
   },
   {
@@ -521,7 +521,7 @@ const mentalHealth = [
     "Phone": "N/A",
     "Hours of Operation": "8:00am-5:00pm",
     "Walk-Ins Allowed?": "Yes",
-    "Eligibility Requirements": "TAY, Family, Adult",
+    "Eligibility Requirements": "Transitioning Age Youth, Family, Adult",
     "Notes ": "N/A"
   },
   {
@@ -536,7 +536,7 @@ const mentalHealth = [
     "Phone": "N/A",
     "Hours of Operation": "8:00am-5:00pm",
     "Walk-Ins Allowed?": "Yes",
-    "Eligibility Requirements": "TAY",
+    "Eligibility Requirements": "Transitioning Age Youth",
     "Notes ": "N/A"
   },
   {
@@ -551,7 +551,7 @@ const mentalHealth = [
     "Phone": "N/A",
     "Hours of Operation": "8:00am-5:00pm",
     "Walk-Ins Allowed?": "Yes",
-    "Eligibility Requirements": "TAY",
+    "Eligibility Requirements": "Transitioning Age Youth",
     "Notes ": "N/A"
   },
   {
@@ -566,7 +566,7 @@ const mentalHealth = [
     "Phone": "N/A",
     "Hours of Operation": "8:00am-5:00pm",
     "Walk-Ins Allowed?": "Yes",
-    "Eligibility Requirements": "TAY, Family, Adult",
+    "Eligibility Requirements": "Transitioning Age Youth, Family, Adult",
     "Notes ": "N/A"
   }
 ]
