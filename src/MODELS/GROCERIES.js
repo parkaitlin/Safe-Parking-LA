@@ -1,8 +1,58 @@
 // object model for each resource
 {
-    programName: "",
-    spa: "",
-    operator: "",
+  programName: "",
+  spa: "",
+  operator: "",
+  city: "",
+  address: "",
+  website: "",
+  phone: "",
+  hours: "",
+  walkIn: boolean,
+  eligibility: ""
+},
+
+const groceries = [
+  {
+    programName: "Grace Resources - Free Groceries",
+    spa: "SPA 1 - Antelope Valley",
+    operator: "Grace Resources",
+    city: "Lancaster",
+    address: "Grace Resource Ctr. 45134 Sierra Hwy., Lancaster",
+    website: "https://www.graceresources.org/",
+    phone: "(661) 940-5272",
+    hours: "Tuesdays & Thursdays at 10:00 AM & 1:00 PM; Spanish only on Wednesdays at 10:00 AM",
+    walkIn: "Yes",
+    eligibility: ""
+  },
+  {
+    programName: "Lancaster Baptist - Groceries",
+    spa: "SPA 1 - Antelope Valley",
+    operator: "Lancaster Baptist Church",
+    city: "Lancaster",
+    address: "First Baptist Church, 603 E. Lancaster Blvd, Lancaster",
+    website: "N/A",
+    phone: "N/A",
+    hours: "Saturday at 9:00 AM",
+    walkIn: "Yes",
+    eligibility: "N/A"
+  },
+  {
+    programName: "Free groceries",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "Pasadena",
+    address: "132 N Euclid Ave Pasadena, CA 91101",
+    website: "https://allsaints-pas.org/",
+    phone: "(626) 796-1172",
+    hours: "Monday, 9am-12pm & 1-3:30pm",
+    walkIn: "No",
+    eligibility: "Call to inquire about eligibility"
+  },
+  {
+    programName: "Free groceries ",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
     city: "",
     address: "",
     website: "",
@@ -10,8 +60,185 @@
     hours: "",
     walkIn: boolean,
     eligibility: ""
-}
-
-const groceries = [
-
+  },
+  {
+    programName: "Free groceries ",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
+  {
+    programName: "Free groceries ",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
+  {
+    programName: "Free groceries ",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
+  {
+    programName: "Free groceries and food vouchers",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
+  {
+    programName: "Free groceries ",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
+  {
+    programName: "Food Distribution",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
+  {
+    programName: "Food Distribution",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
+  {
+    programName: "Food Distribution",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
+  {
+    programName: "Food Distribution",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
+  {
+    programName: "Food Distribution",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
+  {
+    programName: "Food Distribution",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
+  {
+    programName: "Food Distribution",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
+  {
+    programName: "Food Distribution",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
+  {
+    programName: "",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
+  {
+    programName: "",
+    spa: "SPA 3 - San Gabriel Valley",
+    operator: "All Saints Episcopal Church",
+    city: "",
+    address: "",
+    website: "",
+    phone: "",
+    hours: "",
+    walkIn: boolean,
+    eligibility: ""
+  },
 ]
