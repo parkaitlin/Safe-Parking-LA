@@ -1,17 +1,3 @@
-// object model for each resource
-{
-    programName: "",
-    spa: "",
-    operator: "",
-    city: "",
-    address: "",
-    website: "",
-    phone: "",
-    hours: "",
-    walkIn: "",
-    eligibility: ""
-}
-
 const mentalHealth = [
   {
     programName: "Daniel's Place",
