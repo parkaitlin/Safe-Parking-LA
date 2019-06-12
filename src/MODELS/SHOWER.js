@@ -1,5 +1,4 @@
 const shower = [
-  [
     {
       PROGRAM_NAME: "Showers",
       SERVICE_PLANNING_AREA: "SPA 3 - San Gabriel Valley",
@@ -286,5 +285,5 @@ const shower = [
       WALK_INS: "No",
       ELIGIBILITY_REQUIREMENTS: "Transitioning Age Youth, Family, Adult"
     }
-  ]
 ]
+

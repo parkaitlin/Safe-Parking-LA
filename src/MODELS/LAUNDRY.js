@@ -1,5 +1,4 @@
 const laundry = [
-  [
     {
       PROGRAM_NAME: "Aroma Laundry & Water",
       SERVICE_PLANNING_AREA: "SPA 4 - Metro LA",
@@ -152,5 +151,5 @@ const laundry = [
       HOURS_OF_OPERATION: "1st Wednesday of every Month: Time is N/A",
       WALK_INS: "Yes",
     }
-  ]
 ]
+
