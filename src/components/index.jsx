@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{Component} from 'react'
+import Home from './Home'
 import '../global.css'
 
 class App extends Component {
@@ -7,7 +8,9 @@ class App extends Component {
   }
   render(){
     return (
-      <h1>hi</h1>
+      <div>
+        <Home/>
+      </div>
     )
 
   }
