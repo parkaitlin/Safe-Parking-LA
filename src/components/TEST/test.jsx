@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { transportation } from '../../MODELS/TRANSPORTATION'
 
-class Resources extends Component {
+class Test extends Component {
   state = {
 
   }
@@ -11,7 +11,6 @@ class Resources extends Component {
       <h1>Please select your Region</h1>
       <p>
         { transportation[0].PROGRAM_NAME }
-
       </p>
     </div>
     )
