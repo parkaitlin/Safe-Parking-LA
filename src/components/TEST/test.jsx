@@ -17,4 +17,4 @@ class Test extends Component {
   }
 }
 
-export default Test
+export default Resources
