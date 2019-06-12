@@ -1,4 +1,4 @@
-// // object model for each resource
+// object model for each resource
 // {
 //     programName: "",
 //     spa: "",
@@ -12,7 +12,7 @@
 //     eligibility: ""
 // }
 
-const mentalHealth = [
+const accessCenters = [
 [
   {
     "Updated by SPA Leadership ": "",
@@ -568,7 +568,6 @@ const mentalHealth = [
     "Walk-Ins Allowed?": "Yes",
     "Eligibility Requirements": "TAY, Family, Adult",
     "Notes ": ""
-  }
+}
 ]
-
 ]
