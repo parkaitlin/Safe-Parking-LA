@@ -8,8 +8,7 @@ const groceries = [
     WEBSITE: "https://allsaints-pas.org/",
     EMAIL: "N/A",
     PHONE: "(626) 796-1172",
-    HOURS_OF_OPERATION: "Mon, 9am-12pm & 1-3:30pm",
-    HOURS_OF_OPERATION: "Mon, 9am-12pm & 1-3:30pm",
+    HOURS_OF_OPERATION: "Monday: 9:00am-12:00am & 1:00pm-3:30pm",
     WALK_INS: "No",
     ELIGIBILITY_REQUIREMENTS: "Call to inquire about eligibility",
     NOTES: "N/A"
@@ -23,11 +22,10 @@ const groceries = [
     WEBSITE: "https://www.paznaz.org/",
     EMAIL: "info@paznaz.org",
     PHONE: "(626) 351-9631",
-    HOURS_OF_OPERATION: "Wed & Thurs 2-4pm (once/2wk",
-    HOURS_OF_OPERATION: "Wed & Thurs 2-4pm (once/2wk",
+    HOURS_OF_OPERATION: "Wednesday, Thursday: 2:00pm-4:00pm",
     WALK_INS: "No",
     ELIGIBILITY_REQUIREMENTS: "Call to inquire about eligibility",
-    NOTES: "N/A"
+    NOTES: "Once every two weeks"
   },
   {
     PROGRAM_NAME: "Free groceries ",
@@ -38,11 +36,10 @@ const groceries = [
     WEBSITE: "http://foothillunitycenter.org/",
     EMAIL: "N/A",
     PHONE: "(626) 584-7420",
-    HOURS_OF_OPERATION: "Tues 9-11:30a,. Wed & Fri 1-3:30pm. (once/wk)",
-    HOURS_OF_OPERATION: "Tues 9-11:30a,. Wed & Fri 1-3:30pm. (once/wk)",
+    HOURS_OF_OPERATION: "Tuesday: 9:00am-11:30am & Wednesday, Friday: 1:00pm-3:30pm",
     WALK_INS: "No",
     ELIGIBILITY_REQUIREMENTS: "N/A",
-    NOTES: "N/A"
+    NOTES: "Once a week"
   },
   {
     PROGRAM_NAME: "Free groceries ",
@@ -53,11 +50,10 @@ const groceries = [
     WEBSITE: "http://friendsindeedpas.org/fid/",
     EMAIL: "N/A",
     PHONE: "(626) 797-5335",
-    HOURS_OF_OPERATION: "Tues & Wed, 10am-3p (once/wk",
-    HOURS_OF_OPERATION: "Tues & Wed, 10am-3p (once/wk",
+    HOURS_OF_OPERATION: "Tuesday, Wednesday: 10:00am-3:00pm",
     WALK_INS: "No",
     ELIGIBILITY_REQUIREMENTS: "Call to inquire about eligibility",
-    NOTES: "N/A"
+    NOTES: "Once a week."
   },
   {
     PROGRAM_NAME: "Free groceries ",
@@ -68,8 +64,7 @@ const groceries = [
     WEBSITE: "http://www.lincolnavenuechristianchurch.org/",
     EMAIL: "Contactus@labcpasadena.org",
     PHONE: "(626) 798-9163",
-    HOURS_OF_OPERATION: "Wed 10am",
-    HOURS_OF_OPERATION: "Wed 10am",
+    HOURS_OF_OPERATION: "Wednesday: 10:00am-UNKNOWN",
     WALK_INS: "No",
     ELIGIBILITY_REQUIREMENTS: "Call to inquire about eligibility",
     NOTES: "N/A"
@@ -83,8 +78,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(626) 773-4404",
-    HOURS_OF_OPERATION: "Mon-Fri 9-11:30am",
-    HOURS_OF_OPERATION: "Mon-Fri 9-11:30am",
+    HOURS_OF_OPERATION: "Monday-Friday: 9:00am-11:30am",
     WALK_INS: "No",
     ELIGIBILITY_REQUIREMENTS: "Call to inquire about eligibility",
     NOTES: "N/A"
@@ -100,7 +94,7 @@ const groceries = [
     PHONE: "(213) 276-4600",
     HOURS_OF_OPERATION: "N/A",
     WALK_INS: "No",
-    ELIGIBILITY_REQUIREMENTS: "Line begins at 8am/First come first serve",
+    ELIGIBILITY_REQUIREMENTS: "Line begins at 8:00am. First come first serve",
     NOTES: "N/A"
   },
   {
@@ -112,8 +106,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 831-9123",
-    HOURS_OF_OPERATION: "M-F, 9-11:30A, 1-5PM",
-    HOURS_OF_OPERATION: "M-F, 9-11:30A, 1-5PM",
+    HOURS_OF_OPERATION: "Monday-Friday: 9:00am-11:30am & 1:00-5:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -127,11 +120,10 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 832-1145 x106",
-    HOURS_OF_OPERATION: "9-5, except 12-1. A-L Last Names T/TH; M-Z Last Names M-F; All on F",
-    HOURS_OF_OPERATION: "9-5, except 12-1. A-L Last Names T/TH; M-Z Last Names M-F; All on F",
+    HOURS_OF_OPERATION: "Monday-Friday: 9:00am-12:00pm & 1:00pm-5:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "1st-15th: can come once/week; 16th-end of month: 2x/week",
-    NOTES: "N/A"
+    NOTES: "Alphabetically A - L last names on Tuesday and Thursday. M - Z last names Monday, Wednesday. All on Friday."
   },
   {
     PROGRAM_NAME: "Free groceries ",
@@ -142,8 +134,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 519-6091",
-    HOURS_OF_OPERATION: "T-Th, 2-4:30P",
-    HOURS_OF_OPERATION: "T-Th, 2-4:30P",
+    HOURS_OF_OPERATION: "Tuesday-Thursday: 2:00pm-4:30pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -157,8 +148,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 834-5215",
-    HOURS_OF_OPERATION: "M, T, TH; 10am",
-    HOURS_OF_OPERATION: "M, T, TH; 10am",
+    HOURS_OF_OPERATION: "Monday, Tuesday, Thursday: 10:00am-UNKNOWN",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -172,8 +162,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 672-2208",
-    HOURS_OF_OPERATION: "M,W, F 9-12p, 1-4p",
-    HOURS_OF_OPERATION: "M,W, F 9-12p, 1-4p",
+    HOURS_OF_OPERATION: "Monday, Wednesday, Friday: 9:00am-12:00pm & 1:00pm-4:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "Serves residents in Inglewood, Lennox, Hawthorne, Lawndale, El Segundo, Manhattan Beach, Gardena, LA City in 90045, 90047 zip codes.Call first, same-day appt’s available",
     NOTES: "N/A"
@@ -187,8 +176,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 540-5252",
-    HOURS_OF_OPERATION: "T & Th, 12-1pm ",
-    HOURS_OF_OPERATION: "T & Th, 12-1pm ",
+    HOURS_OF_OPERATION: "Tuesday, Thursday: 12:00pm-1:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "First 100 guests in the serves Lawndale, Lennox, Inglewood, Westchester, El Segundo, parts of LA.   ",
     NOTES: "N/A"
@@ -202,8 +190,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 677-5597",
-    HOURS_OF_OPERATION: "T &Th, 10-noon",
-    HOURS_OF_OPERATION: "T &Th, 10-noon",
+    HOURS_OF_OPERATION: "Tuesday, Thursday: 10:00am-12:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "Can get emergency food once a week.",
     NOTES: "N/A"
@@ -217,8 +204,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 374-4673",
-    HOURS_OF_OPERATION: "M & W 9a-12pm",
-    HOURS_OF_OPERATION: "M & W 9a-12pm",
+    HOURS_OF_OPERATION: "Monday, Wednesday: 9:00am-12:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "Non-church members can get groceries once/month",
     NOTES: "N/A"
@@ -232,8 +218,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 835-7161",
-    HOURS_OF_OPERATION: "Tuesday 7:30-9:30A",
-    HOURS_OF_OPERATION: "Tuesday 7:30-9:30A",
+    HOURS_OF_OPERATION: "Tuesday: 7:30am-9:30am",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "Services Carson residents only",
     NOTES: "N/A"
@@ -247,8 +232,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 328-3689",
-    HOURS_OF_OPERATION: "2nd and 4th Tuesday 9:30a",
-    HOURS_OF_OPERATION: "2nd and 4th Tuesday 9:30a",
+    HOURS_OF_OPERATION: "2nd and 4th Tuesday of every Month: 9:30am-UNKNOWN",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "serves Torrance, Lomita, Gardena, Carson, Harbor G’Way",
     NOTES: "N/A"
@@ -262,8 +246,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 326-3364 x15",
-    HOURS_OF_OPERATION: "8:30-10:00A",
-    HOURS_OF_OPERATION: "8:30-10:00A",
+    HOURS_OF_OPERATION: "Monday-Sunday: 8:30am-10:00am",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "serves Lomita, Wilmington, Harbor City, Torrance residents",
     NOTES: "N/A"
@@ -277,8 +260,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 830-3043",
-    HOURS_OF_OPERATION: "Wednesday 2-3:30P",
-    HOURS_OF_OPERATION: "Wednesday 2-3:30P",
+    HOURS_OF_OPERATION: "Wednesday: 2:00pm-3:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -292,8 +274,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 323-2115",
-    HOURS_OF_OPERATION: "2nd Wednesday 8-10:30A",
-    HOURS_OF_OPERATION: "2nd Wednesday 8-10:30A",
+    HOURS_OF_OPERATION: "2nd Wednesday of every Month: 8:00am-10:30am",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -307,8 +288,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 370-4319",
-    HOURS_OF_OPERATION: "1st and 3rd Thurs 9-11A",
-    HOURS_OF_OPERATION: "1st and 3rd Thurs 9-11A",
+    HOURS_OF_OPERATION: "1st and 3rd Thursday of every Month: 9:00am-11:00am",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -322,8 +302,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 326-2757",
-    HOURS_OF_OPERATION: "2nd, 4th Thurs, 6-7p",
-    HOURS_OF_OPERATION: "2nd, 4th Thurs, 6-7p",
+    HOURS_OF_OPERATION: "2nd and 4th Thursday of every Month: 6:00pm-7:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -337,8 +316,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 973-7031",
-    HOURS_OF_OPERATION: "Th 1-4p",
-    HOURS_OF_OPERATION: "Th 1-4p",
+    HOURS_OF_OPERATION: "Thursday: 1:00pm-4:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -352,8 +330,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 832-7228",
-    HOURS_OF_OPERATION: "Th 9a-12p",
-    HOURS_OF_OPERATION: "Th 9a-12p",
+    HOURS_OF_OPERATION: "Thursday: 9:00am-12:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "Can receive groceries once a month",
     NOTES: "N/A"
@@ -367,8 +344,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 676-8352",
-    HOURS_OF_OPERATION: "Fr 9a-1p",
-    HOURS_OF_OPERATION: "Fr 9a-1p",
+    HOURS_OF_OPERATION: "Friday: 9:00am-1:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -382,7 +358,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 530-0533",
-    HOURS_OF_OPERATION: "3rd Sat 10-11a",
+    HOURS_OF_OPERATION: "3rd Saturday of every Month: 10:00am-11:00am",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -396,8 +372,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 832-2788",
-    HOURS_OF_OPERATION: "2nd, 4th Sat 10:30-11:30a",
-    HOURS_OF_OPERATION: "2nd, 4th Sat 10:30-11:30a",
+    HOURS_OF_OPERATION: "2nd and 4th Saturday of every Month: 10:30am-11:30am",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -411,8 +386,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 547-5362",
-    HOURS_OF_OPERATION: "2nd, 4th Sat 1-3p",
-    HOURS_OF_OPERATION: "2nd, 4th Sat 1-3p",
+    HOURS_OF_OPERATION: "2nd and 4th Saturday of every Month: 1:00pm-3:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -426,8 +400,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 676-1144",
-    HOURS_OF_OPERATION: "1st Sat 11:00a",
-    HOURS_OF_OPERATION: "1st Sat 11:00a",
+    HOURS_OF_OPERATION: "1st Saturday of every Month: 11:00am-UNKNOWN",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -441,8 +414,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 970-9023",
-    HOURS_OF_OPERATION: "3rd Sat. 12-12:30",
-    HOURS_OF_OPERATION: "3rd Sat. 12-12:30",
+    HOURS_OF_OPERATION: "3rd Saturday of every Month: 12:00pm-12:30pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -471,8 +443,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(323) 757-1739",
-    HOURS_OF_OPERATION: "2nd, 4th Sat 1-2p",
-    HOURS_OF_OPERATION: "2nd, 4th Sat 1-2p",
+    HOURS_OF_OPERATION: "2nd and 4th Saturday of every Month: 1:00pm-2:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -486,8 +457,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 540-0329",
-    HOURS_OF_OPERATION: "1st Sat 8:30-10a",
-    HOURS_OF_OPERATION: "1st Sat 8:30-10a",
+    HOURS_OF_OPERATION: "1st Saturday of every Month: 8:30am-10:00am",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "Numbers are drawn randomly at 7:55 am for food distribution rather than on a first come-first serve basis",
     NOTES: "N/A"
@@ -501,8 +471,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(310) 679-1139",
-    HOURS_OF_OPERATION: "2nd Sun 8a-12:30p",
-    HOURS_OF_OPERATION: "2nd Sun 8a-12:30p",
+    HOURS_OF_OPERATION: "2nd Sunday of every Month: 8:00am-12:30pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -544,8 +513,7 @@ const groceries = [
     WEBSITE: "http://www.godprovidesministry.org/",
     EMAIL: "N/A",
     PHONE: "(626) 442-4273",
-    HOURS_OF_OPERATION: "Mon-Fri 8AM to 4PM Sat 8AM to 2PM",
-    HOURS_OF_OPERATION: "Mon-Fri 8AM to 4PM at 8AM to 2PM",
+    HOURS_OF_OPERATION: "Monday-Friday: 8:00am-4:00pm & Saturday: 8:00am-2:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "Call for eligibility requirements",
     NOTES: "N/A"
@@ -559,11 +527,10 @@ const groceries = [
     WEBSITE: "https://www.graceresources.org/",
     EMAIL: "N/A",
     PHONE: "(661) 940-5272",
-    HOURS_OF_OPERATION: "Tuesdays & Thursdays at 10:00 AM & 1:00 PM; Spanish only on Wednesdays at 10:00 AM",
-    HOURS_OF_OPERATION: "Tuesdays & Thursdays at 10:00 AM & 1:00 PM; Spanish only on Wednesdays at 10:00 AM",
+    HOURS_OF_OPERATION: "Tuesdays, Thursdays: 10:00am-1:00pm",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
-    NOTES: "N/A"
+    NOTES: "Spanish only on Wednesday: 10:00am-1:00pm"
   },
   {
     PROGRAM_NAME: "Lancaster Baptist - Groceries",
@@ -574,8 +541,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "N/A",
-    HOURS_OF_OPERATION: "Saturday at 9:00 AM",
-    HOURS_OF_OPERATION: "Saturday at 9:00 AM",
+    HOURS_OF_OPERATION: "Saturday: 9:00am-UNKNOWN",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -589,8 +555,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 867-2337",
-    HOURS_OF_OPERATION: "Tuesday 10:00 AM - 1:00 PM",
-    HOURS_OF_OPERATION: "Tuesday 10:00 AM - 1:00 PM",
+    HOURS_OF_OPERATION: "Tuesday: 10:00am-1:00pm",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -604,8 +569,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 804-0808",
-    HOURS_OF_OPERATION: "Tuesday 9:00 AM  - 12:00 PM",
-    HOURS_OF_OPERATION: "Tuesday 9:00 AM  - 12:00 PM",
+    HOURS_OF_OPERATION: "Tuesday: 9:00am-12:00pm",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -619,8 +583,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 866-1812",
-    HOURS_OF_OPERATION: "Tuesday 2:00 PM  - 3:00 PM, 4:00 PM - 5:00 PM",
-    HOURS_OF_OPERATION: "Tuesday 2:00 PM  - 3:00 PM, 4:00 PM - 5:00 PM",
+    HOURS_OF_OPERATION: "Tuesday: 2:00pm-3:00pm & 4:00pm-5:00pm",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -634,8 +597,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 866-8283",
-    HOURS_OF_OPERATION: "2nd and 4th Wednesday 7:45 PM",
-    HOURS_OF_OPERATION: "2nd and 4th Wednesday 7:45 PM",
+    HOURS_OF_OPERATION: "2nd and 4th Wednesday of every Month: 7:45pm-UNKNOWN",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -649,8 +611,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 204-6461",
-    HOURS_OF_OPERATION: "2nd and 4th Wednesday 11:30 AM - 1:30 PM",
-    HOURS_OF_OPERATION: "2nd and 4th Wednesday 11:30 AM - 1:30 PM",
+    HOURS_OF_OPERATION: "2nd and 4th Wednesday: 11:30am-1:30pm",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -664,8 +625,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 925-5093",
-    HOURS_OF_OPERATION: "Wednesday-Thursday 8:30 PM - 9:00 PM ",
-    HOURS_OF_OPERATION: "Wednesday-Thursday 8:30 PM - 9:00 PM ",
+    HOURS_OF_OPERATION: "Wednesday, Thursday: 8:30pm-9:00pm",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "Food is distributed after Bible Study 7:15PM"
@@ -679,8 +639,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 920-7796",
-    HOURS_OF_OPERATION: "Thursday 8:00 AM - 10:00 AM",
-    HOURS_OF_OPERATION: "Thursday 8:00 AM - 10:00 AM",
+    HOURS_OF_OPERATION: "Thursday: 8:00am-10:00am",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "Canned food, meat and bread"
@@ -694,8 +653,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 925-4888",
-    HOURS_OF_OPERATION: "Thursday 10:00 AM",
-    HOURS_OF_OPERATION: "Thursday 10:00 AM",
+    HOURS_OF_OPERATION: "Thursday: 10:00am-UNKNOWN",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -709,8 +667,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 421-9374",
-    HOURS_OF_OPERATION: "4th Thursday 10:00 AM - 11:00 AM",
-    HOURS_OF_OPERATION: "4th Thursday 10:00 AM - 11:00 AM",
+    HOURS_OF_OPERATION: "4th Thursday of every month: 10:00am-11:00am",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -724,8 +681,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 925-3706",
-    HOURS_OF_OPERATION: "2nd and 4th Tuesday 4:00PM - 6:00 PM",
-    HOURS_OF_OPERATION: "2nd and 4th Tuesday 4:00PM - 6:00 PM",
+    HOURS_OF_OPERATION: "2nd and 4th Tuesday of every Month: 4:00pm-6:00pm",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -739,8 +695,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 867-0714",
-    HOURS_OF_OPERATION: "Friday 9:00 AM - 10:30 AM",
-    HOURS_OF_OPERATION: "Friday 9:00 AM - 10:30 AM",
+    HOURS_OF_OPERATION: "Friday: 9:00am-10:30am",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "Sign in at 8:00 AM"
@@ -754,8 +709,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 804-4778",
-    HOURS_OF_OPERATION: "Friday 3:00 PM - 4:00 PM",
-    HOURS_OF_OPERATION: "Friday 3:00 PM - 4:00 PM",
+    HOURS_OF_OPERATION: "Friday: 3:00pm-4:00pm",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -769,8 +723,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 867-3198",
-    HOURS_OF_OPERATION: "1st Saturday 9:00 AM - 11:00AM",
-    HOURS_OF_OPERATION: "1st Saturday 9:00 AM - 11:00AM",
+    HOURS_OF_OPERATION: "1st Saturday of every MOnth: 9:00am-11:00am",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -784,8 +737,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 425-1219",
-    HOURS_OF_OPERATION: "2nd and 4th Saturday 9:00 AM - 11:00 AM",
-    HOURS_OF_OPERATION: "2nd and 4th Saturday 9:00 AM - 11:00 AM",
+    HOURS_OF_OPERATION: "2nd and 4th Saturday of every Month: 9:00am-11:00am",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -799,8 +751,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 925-5093",
-    HOURS_OF_OPERATION: "Sunday 11:45 AM - 12:30 PM",
-    HOURS_OF_OPERATION: "Sunday 11:45 AM - 12:30 PM",
+    HOURS_OF_OPERATION: "Sunday: 11:45am-12:30pm",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -814,8 +765,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 860-9097",
-    HOURS_OF_OPERATION: "Wednesdat 2:00 PM - 6:00 PM, thursday 9:30 AM - 3:30 PM",
-    HOURS_OF_OPERATION: "Wednesdat 2:00 PM - 6:00 PM, thursday 9:30 AM - 3:30 PM",
+    HOURS_OF_OPERATION: "Wednesday: 2:00pm-6:00pm & Thursday: 9:30am-3:30pm",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -829,8 +779,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 803-5631",
-    HOURS_OF_OPERATION: "Mon, Wed, Fri 9:30AM 1:30PM",
-    HOURS_OF_OPERATION: "Mon, Wed, Fri 9:30AM 1:30PM",
+    HOURS_OF_OPERATION: "Monday, Wednesday, Friday: 9:30am-1:30pm",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -844,8 +793,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 803-5631",
-    HOURS_OF_OPERATION: "Tues 7:30PM - 8:30PM, Wed 4:00 PM - 7:00 PM, Sat 9:00 PM - 1:00 PM, Sun 9:30AM - 10:30AM",
-    HOURS_OF_OPERATION: "Tues 7:30PM - 8:30PM, Wed 4:00 PM - 7:00 PM, Sat 9:00 PM - 1:00 PM, Sun 9:30AM - 10:30AM",
+    HOURS_OF_OPERATION: "Tuesday: 7:30pm-8:30pm & Wednesday: 4:00pm-7:00pm & Saturday: 9:00am-1:00pm & Sunday: 9:30am-10:30am",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -859,8 +807,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "(562) 653-9868",
-    HOURS_OF_OPERATION: "3rd Sat 10:00 AM - 2:00 PM",
-    HOURS_OF_OPERATION: "3rd Sat 10:00 AM - 2:00 PM",
+    HOURS_OF_OPERATION: "3rd Saturday of every Month: 10:00am-2:00pm",
     WALK_INS: "Yes",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -874,8 +821,7 @@ const groceries = [
     WEBSITE: "https://www.coryskitchen.org/",
     EMAIL: "N/A",
     PHONE: "(626) 305-0392",
-    HOURS_OF_OPERATION: "Tuesdays 5:30PM to 7:30PM",
-    HOURS_OF_OPERATION: "Tuesdays 5:30PM to 7:30PM",
+    HOURS_OF_OPERATION: "Tuesday: 5:30pm-7:30pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "Photo ID and two proofs of residence",
     NOTES: "N/A"
@@ -889,8 +835,7 @@ const groceries = [
     WEBSITE: "https://www.coryskitchen.org/",
     EMAIL: "N/A",
     PHONE: "(626) 331-3322",
-    HOURS_OF_OPERATION: "Fridays 5:00PM to 7:00PM",
-    HOURS_OF_OPERATION: "Fridays 5:00PM to 7:00PM",
+    HOURS_OF_OPERATION: "Friday: 5:00pm-7:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "Photo ID and two proofs of residence",
     NOTES: "N/A"
@@ -904,8 +849,7 @@ const groceries = [
     WEBSITE: "http://www.inlandvalleyhopepartners.org/Program-Services/Food-Security-Program.asp",
     EMAIL: "N/A",
     PHONE: "(909) 622-3806, x#301 ",
-    HOURS_OF_OPERATION: "Monday – Thursday  9:00 a.m. – 3:00 p.m",
-    HOURS_OF_OPERATION: "Monday – Thursday  9:00 a.m. – 3:00 p.m",
+    HOURS_OF_OPERATION: "Monday-thursday: 9:00am-3:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -919,8 +863,7 @@ const groceries = [
     WEBSITE: "http://www.inlandvalleyhopepartners.org/Program-Services/Food-Security-Program.asp",
     EMAIL: "N/A",
     PHONE: "(909) 599-1103",
-    HOURS_OF_OPERATION: "Mon, Wed, Fri. 2:00 – 4:00 p.m.",
-    HOURS_OF_OPERATION: "Mon, Wed, Fri. 2:00 – 4:00 p.m.",
+    HOURS_OF_OPERATION: "Monday, Wednesday, Friday: 2:00pm-4:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -934,8 +877,7 @@ const groceries = [
     WEBSITE: "http://www.inlandvalleyhopepartners.org/Program-Services/Food-Security-Program.asp",
     EMAIL: "N/A",
     PHONE: "(909) 622-3806, x#401",
-    HOURS_OF_OPERATION: "Tuesday & Thursday 12:30 - 4:30",
-    HOURS_OF_OPERATION: "Tuesday & Thursday 12:30 - 4:30",
+    HOURS_OF_OPERATION: "Tuesday, Thursday: 12:30pm-4:30pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -949,8 +891,7 @@ const groceries = [
     WEBSITE: "http://www.inlandvalleyhopepartners.org/Program-Services/Food-Security-Program.asp",
     EMAIL: "N/A",
     PHONE: "(909) 622-3806",
-    HOURS_OF_OPERATION: "Thursday 9:30 a.m. – 3:30 p.m",
-    HOURS_OF_OPERATION: "Thursday 9:30 a.m. – 3:30 p.m",
+    HOURS_OF_OPERATION: "Thursday: 9:30am-3:30pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -964,8 +905,7 @@ const groceries = [
     WEBSITE: "https://www.shepherdspantry.com/services/",
     EMAIL: "N/A",
     PHONE: "(626) 852-7630",
-    HOURS_OF_OPERATION: "Wednesday & Thursday 5:00PM to 7:00PM",
-    HOURS_OF_OPERATION: "Wednesday & Thursday 5:00PM to 7:00PM",
+    HOURS_OF_OPERATION: "Wednesday, Thursday: 5:00pm-7:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -979,8 +919,7 @@ const groceries = [
     WEBSITE: "https://parish.sangabrielmissionchurch.org/apps/events/2014/6/29/1647970/?id=1",
     EMAIL: "N/A",
     PHONE: "(626) 457-3035",
-    HOURS_OF_OPERATION: "Sunday 8am – 10am",
-    HOURS_OF_OPERATION: "Sunday 8am – 10am",
+    HOURS_OF_OPERATION: "Sunday: 8:00am-10:00am",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -994,8 +933,7 @@ const groceries = [
     WEBSITE: "N/A",
     EMAIL: "N/A",
     PHONE: "N/A",
-    HOURS_OF_OPERATION: "Tuesday, Wednesday and Thursday 10:00 am to 2:00 pm",
-    HOURS_OF_OPERATION: "Tuesday, Wednesday and Thursday 10:00 am to 2:00 pm",
+    HOURS_OF_OPERATION: "Tuesday, Wednesday, Thursday: 10:00am-2:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -1009,8 +947,7 @@ const groceries = [
     WEBSITE: "http://www.westsidefoodbankca.org/",
     EMAIL: "N/A",
     PHONE: "(310) 828-6016",
-    HOURS_OF_OPERATION: "Wednesday 2:30pm-5:30pm ",
-    HOURS_OF_OPERATION: "Wednesday 2:30pm-5:30pm ",
+    HOURS_OF_OPERATION: "Wednesday: 2:30pm-5:30pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -1024,8 +961,7 @@ const groceries = [
     WEBSITE: "http://www.westsidefoodbankca.org/",
     EMAIL: "N/A",
     PHONE: "(310) 450-0919",
-    HOURS_OF_OPERATION: "Sunday 12:30pm-1:30pm",
-    HOURS_OF_OPERATION: "Sunday 12:30pm-1:30pm",
+    HOURS_OF_OPERATION: "Sunday: 12:30pm-1:30pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -1039,8 +975,7 @@ const groceries = [
     WEBSITE: "https://foodoasis.la/food-pantry/wsfb-st-annes-social-service/",
     EMAIL: "N/A",
     PHONE: "(310) 824-4411",
-    HOURS_OF_OPERATION: "Wednesday 4:00pm-5:30pm ",
-    HOURS_OF_OPERATION: "Wednesday 4:00pm-5:30pm ",
+    HOURS_OF_OPERATION: "Wednesday: 4:00pm-5:30pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -1054,8 +989,7 @@ const groceries = [
     WEBSITE: "https://stjosephctr.org/education-vocation-training/",
     EMAIL: "N/A",
     PHONE: "(310) 396-6468 x313 ",
-    HOURS_OF_OPERATION: "Monday, Wednesday, Thursday 10:00am-12:00pm and Tuesday and Friday 1:00pm- 3:00pm",
-    HOURS_OF_OPERATION: "Monday, Wednesday, Thursday 10:00am-12:00pm and Tuesday and Friday 1:00pm- 3:00pm",
+    HOURS_OF_OPERATION: "Monday, Wednesday, Thursday: 10:00am-12:00pm & Tuesday, Friday: 1:00pm-3:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -1069,8 +1003,7 @@ const groceries = [
     WEBSITE: "http://www.westsidefoodbankca.org/index.php?option=com_content&task=view&id=70&Itemid=94",
     EMAIL: "N/A",
     PHONE: "(310) 451-1358",
-    HOURS_OF_OPERATION: "Monday thru Friday 9:00am - 11:00am ",
-    HOURS_OF_OPERATION: "Monday thru Friday 9:00am - 11:00am ",
+    HOURS_OF_OPERATION: "Monday-Friday: 9:00am-11:00am",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
@@ -1084,9 +1017,9 @@ const groceries = [
     WEBSITE: "https://www.jfsla.org/sslpage.aspx?pid=300",
     EMAIL: "N/A",
     PHONE: "(310) 288-0286 (when pantry is open) 818-988-7682",
-    HOURS_OF_OPERATION: "Sunday 9:00am-12:00pm (open every Sunday except holiday weekends) Monday thru Thursday 10:00am- 1:30pm ",
+    HOURS_OF_OPERATION: "Monday-Thursday: 10:00am-1:30pm & Sunday: 9:00am-12:00pm",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
-    NOTES: "N/A"
+    NOTES: "Open every Sunday EXCEPT holiday weekends."
   }
 ]
