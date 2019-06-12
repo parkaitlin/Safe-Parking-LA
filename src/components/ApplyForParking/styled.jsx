@@ -1,73 +1,56 @@
 import styled from 'styled-components'
 
 export const MainContainer = styled.div`
-
-  > div:nth-of-type(1) {
-      h1 {
-        text-align: center;
-        font-size: 3.5em;
+  
+  background-color: grey;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  > div {
+    background-color: yellow;
+    width: 1000px;
+    ul {
+      li {
+        margin-bottom: .5em;
       }
     }
-    main {
-      padding-left: 300px;
-      padding-right: 300px;
+    ol {
+      li {
+        margin-bottom: 1em;
+      }
     }
     section {
       display: flex;
-      div:nth-of-type(1) {
-        img {
-          height: 350px;
-          width: 350px;
-        }
-      }
       div:nth-of-type(2) {
-        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
       }
-    }
-
-  @media (max-width: 640px) {
-    background-color: grey;
-    height: 100vh;
-    > div:nth-of-type(1) {
-        h1 {
-          text-align: center;
-          font-size: 2em;
-        }
-      }
-    main {
-      padding-left: 1.5em;
-      padding-right: 1.5em;
-      div:nth-of-type(1) {
-        h1 {
-          text-align: left;
-        }
-      }
-      div:nth-of-type(2) {
-        h1 {
-          text-align: left;
-        }
-      }
-    }
-    section {
-      display: block;
-      div:nth-of-type(1) {
-        display: flex;
-        justify-content: center;
-        img {
-          height: 150px;
-          width: 150px;
-        }
-      }
-      div:nth-of-type(2) {
-        button {
-          background-color: black;
-          color: white;
-        }
+      img {
+        height: 340.5px;
+        width: 512px;
+        border-radius: 10px;
       }
     }
   }
+  @media(max-width: 640px) {
+   display: block;
+   > div {
+      width: 100%;
+      background-color: blue;
+      section {
+        flex-direction: column;
+        img {
+          height: 170.25px;
+          width: 256px;
+        }
+        div:nth-of-type(1) {
+          
+        }
+        div:nth-of-type(2) {
+
+        }
+      }
+   }
+  }
+
 `
