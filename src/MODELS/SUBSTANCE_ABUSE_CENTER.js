@@ -12,7 +12,7 @@
 //     eligibility: ""
 // }
 
-const centers = [[
+const subAbuse = [[
 {
     "Updated by SPA leadership": "",
     "Program Name": "",
