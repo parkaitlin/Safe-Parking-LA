@@ -20,17 +20,22 @@ const Quoth=styled.div`
 class People extends Component{
     newPic=() => {
         for(let i=0;i<img.length;i++){
-            return <div>
-                <Img src={'../../picture'+ img[i] + '.jpg'} alt="HEY! WHERE'S THE PICC???"/>
+            return
+            <div>
+                <Img src={'../../picture'+[i]+'.jpg'} alt="HEY! WHERE'S THE PICC???" />
             </div>
+        }
+        for(let i=0;i<quotes.length;i++){
+            return
+            <Quoth>
+                {quotes[i]}
+            </Quoth>
         }
     }
     render() {
-        return (<div>
-            
-            <Quoth>
-                {quotes[0]}
-            </Quoth>
+        return (
+        <div>
+            {this.newPic()}
         </div>)
     }
 }
