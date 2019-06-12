@@ -1,4 +1,4 @@
-const accessCenters = [
+export const accessCenters = [
     {
       PROGRAM_NAME: "Exodus Mental Health",
       SERVICE_PLANNING_AREA: "SPA 4 - Metro LA",
