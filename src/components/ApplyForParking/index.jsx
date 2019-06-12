@@ -37,17 +37,19 @@ const ApplyForParking = () => {
             </li>
           </ol>
         </div>
-        <div>
-          <img src="https://i.imgur.com/h1AChnN.png" />
-        </div>
-        <div>
-          <button>
-            Interest Form
-          </button>
-          <button>
-            Compliance Form
-          </button>
-        </div>
+        <section>
+          <div>
+            <img src="https://i.imgur.com/h1AChnN.png" />
+          </div>
+          <div>
+            <button>
+              Interest Form
+            </button>
+            <button>
+              Compliance Form
+            </button>
+          </div>
+        </section>
       </main>
     </MainContainer>
   )
