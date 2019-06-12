@@ -1,19 +1,4 @@
-// object model for each resource
-// {
-//     programName: "N/A",
-//     spa: "N/A",
-//     operator: "N/A",
-//     city: "N/A",
-//     address: "N/A",
-//     website: "N/A",
-//     phone: "N/A",
-//     hours: "N/A",
-//     walkIn: boolean,
-//     eligibility: "N/A"
-// }
-
 const transportation = [
-[
    {
       "Updated By SPA Leadership ": "N/A",
       "Program Name": "Dial-A-Ride",
@@ -42,5 +27,4 @@ const transportation = [
       "Walk-Ins Allowed?": "No",
       "Eligibility Requirements": "N/A"
    }
-]
 ]

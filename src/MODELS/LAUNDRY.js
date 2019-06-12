@@ -1,19 +1,4 @@
-// object model for each resource
-{
-    programName: "N/A",
-    spa: "N/A",
-    operator: "N/A",
-    city: "N/A",
-    address: "N/A",
-    website: "N/A",
-    phone: "N/A",
-    hours: "N/A",
-    walkIn: boolean,
-    eligibility: "N/A"
-}
-
 const laundry = [
-[
 {
     "Updated by SPA Leadership ": "N/A",
     "Program Name": "Aroma Laundry & Water",
@@ -224,5 +209,4 @@ const laundry = [
     "Walk-Ins Allowed?": "Yes",
     "Eligibility Requirements": "N/A"
 }
-]
 ]

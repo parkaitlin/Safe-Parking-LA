@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 // object model for each resource
 {
     programName: "N/A",
@@ -12,8 +14,8 @@
     eligibility: "N/A"
 }
 
+>>>>>>> master
 const shower = [
-[
   {
     "Updated by SPA Leadership ": "N/A",
     "Program Name": "Showers",
@@ -322,5 +324,4 @@ const shower = [
     "Walk-Ins Allowed?": "No",
     "Eligibility Requirements": "Transitioning Age Youth, Family, Adult"
   }
-]
 ]

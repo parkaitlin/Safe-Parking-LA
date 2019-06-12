@@ -1,19 +1,4 @@
-// // object model for each resource
-// {
-//     programName: "N/A",
-//     spa: "N/A",
-//     operator: "N/A",
-//     city: "N/A",
-//     address: "N/A",
-//     website: "N/A",
-//     phone: "N/A",
-//     hours: "N/A",
-//     walkIn: boolean,
-//     eligibility: "N/A"
-// }
-
 const mentalHealth = [
-[
   {
     "Updated by SPA Leadership ": "N/A",
     "Program Name": "Exodus Mental Health",
@@ -569,5 +554,4 @@ const mentalHealth = [
     "Eligibility Requirements": "Transitioning Age Youth, Family, Adult",
     "Notes ": "N/A"
   }
-]
 ]

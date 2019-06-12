@@ -1,19 +1,4 @@
-// object model for each resource
-{
-    programName: "N/A",
-    spa: "N/A",
-    operator: "N/A",
-    city: "N/A",
-    address: "N/A",
-    website: "N/A",
-    phone: "N/A",
-    hours: "N/A",
-    walkIn: boolean,
-    eligibility: "N/A"
-}
-
 const meals = [
-[
 {
     "Updated By SPA Leadership ": "N/A",
     "Program Name": "Church in the Park- Breakfast",
@@ -764,5 +749,4 @@ const meals = [
     "Eligibility Requirements": "Provides hot meals to\r\rhomeless individuals and families living in\r\rmotels",
     "Notes": "N/A"
 }
-]
 ]
