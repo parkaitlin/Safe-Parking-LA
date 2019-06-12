@@ -4,4 +4,3 @@ export const img=[
 export const quotes=[
     "Quoth the raven, give me everything","BLURP","TEST"
 ]
-

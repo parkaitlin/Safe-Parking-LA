@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import Home from './Home'
+import Test from '../components/TEST/test'
 import '../global.css'
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
     return (
       <div>
         <Home/>
+        <Test />
       </div>
     )
 
