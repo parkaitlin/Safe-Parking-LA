@@ -5,16 +5,16 @@ import background from '../../background1.jpg'
 
 
 const Img=styled.img`
+    -webkit-clip-path: circle(28% at 60% 43%);
     clip-path: circle(28% at 60% 43%);
-    height: 13vw;
-    margin-left: -3vw;
-    margin-top: -3vw;
+    height: 10vw;
+    margin-top: -6vw;
 `
 const Quoth=styled.div`
     position: absolute;
     height: 5vw;
     text-align: center;
-    margin-top: 5vw;
+    margin-top: 2vw;
     margin-left: -0.5vw;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -70,7 +70,7 @@ const Background = styled.div`
     background-image: url(/static/media/background1.43d255c5.jpg);
     width: 100vw;
     position: absolute;
-    height: 17vw;
+    height: 13vw;
     background-size: cover;
     background-position: right;
     border-top: solid #ffffff8c 1vw;
