@@ -1,4 +1,4 @@
-const subAbuse = [[
+const subAbuse = [
   {
     PROGRAM_NAME: "N/A",
     SERVICE_PLANNING_AREA: "SPA 3 - San Gabriel Valley",
@@ -414,4 +414,5 @@ const subAbuse = [[
     WALK_INS: "No",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"
-  }]]
+  }
+]

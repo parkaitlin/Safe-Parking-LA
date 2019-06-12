@@ -1,5 +1,4 @@
 const transportation = [
-  [
     {
       "Program Name": "Dial-A-Ride",
       "Service Planning/Geographic Area": "SPA 1 - Antelope Valley",
@@ -10,6 +9,7 @@ const transportation = [
       "Phone": "(661) 945-9445",
       "Hours of Operation": "Monday-Friday: 6:00am-7:30pm & Saturdays, Sunday: 8:00am-6:00pm",
       "Walk-Ins Allowed?": "No",
+      "Eligibility Requirements": "N/A"
     },
     {
       "Program Name": "N/A",
@@ -21,6 +21,6 @@ const transportation = [
       "Phone": "(310) 451-5411",
       "Hours of Operation": "Monday-Sunday: 4:30am-12:30pm",
       "Walk-Ins Allowed?": "No",
-    }
-  ]
+      "Eligibility Requirements": "N/A"
+   }
 ]

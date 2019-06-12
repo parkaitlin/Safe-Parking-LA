@@ -1,5 +1,4 @@
 const mentalHealth = [
-  [
     {
       PROGRAM_NAME: "Exodus Mental Health",
       SERVICE_PLANNING_AREA: "SPA 4 - Metro LA",
@@ -444,5 +443,4 @@ const mentalHealth = [
       WALK_INS: "Yes",
       ELIGIBILITY_REQUIREMENTS: "Transitioning Age Youth, Family, Adult",
     }
-  ]
 ]
