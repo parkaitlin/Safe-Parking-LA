@@ -199,7 +199,7 @@ const shower = [
       SERVICE_PLANNING_AREA: "SPA 3 - San Gabriel Valley",
       OPERATOR : "Shower of Hope",
       NEIGHBORHOOD: "Duarte",
-      ADDRESS: "Lario Staging Area 15701 Foothill Blvd.\rDuarte, CA 91010",
+      ADDRESS: "Lario Staging Area 15701 Foothill Blvd. Duarte, CA 91010",
       WEBSITE: "N/A",
       EMAIL: "N/A",
       PHONE: "N/A",
