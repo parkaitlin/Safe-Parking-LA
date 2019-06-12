@@ -17,6 +17,6 @@ const transportation = [
       ADDRESS: "N/A",
       WEBSITE: "https://www.bigbluebus.com/",
       PHONE: "(310) 451-5411",
-      HOURS_OF_OPERATION: "Monday-Sunday: 4:30am-12:30pm",
+      HOURS_OF_OPERATION: "Monday-Sunday: 4:30am-12:30pm",``
    }
 ]
