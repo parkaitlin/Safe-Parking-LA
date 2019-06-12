@@ -1,17 +1,3 @@
-// // object model for each resource
-// {
-//     programName: "N/A",
-//     spa: "N/A",
-//     operator: "N/A",
-//     city: "N/A",
-//     address: "N/A",
-//     website: "N/A",
-//     phone: "N/A",
-//     hours: "N/A",
-//     walkIn: boolean,
-//     eligibility: "N/A"
-// }
-
 const subAbuse = [[
 {
     "Updated by SPA leadership": "N/A",
