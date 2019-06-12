@@ -1,4 +1,4 @@
-const groceries = [
+export const groceries = [
   {
     PROGRAM_NAME: "Free groceries",
     SERVICE_PLANNING_AREA: "SPA 3 - San Gabriel Valley",
