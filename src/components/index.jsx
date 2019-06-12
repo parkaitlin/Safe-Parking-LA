@@ -1,6 +1,10 @@
 import React,{Component} from 'react'
+import {Switch, Route} from 'react-router-dom'
+import * as routes from './constants/routes'
+
 import Home from './Home'
 import Test from '../components/TEST/test'
+import Navbar from './Navbar'
 import '../global.css'
 
 class App extends Component {
@@ -10,8 +14,11 @@ class App extends Component {
   render(){
     return (
       <div>
-        <Home/>
-        <Test />
+        <Navbar/>
+        <Switch>
+          <Route exact path={routes.HOME} render={()=> <Home/>} />
+          <Route exact path={routes.RESOURCE} render={()=> <Test/>} />
+        </Switch>
       </div>
     )
 
