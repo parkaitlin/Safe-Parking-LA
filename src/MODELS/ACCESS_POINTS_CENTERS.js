@@ -1,19 +1,4 @@
-// object model for each resource
-// {
-//     programName: "",
-//     spa: "",
-//     operator: "",
-//     city: "",
-//     address: "",
-//     website: "",
-//     phone: "",
-//     hours: "",
-//     walkIn: boolean,
-//     eligibility: ""
-// }
-
 const accessCenters = [
-[
   {
     "Updated by SPA Leadership ": "",
     "Program Name": "Exodus Mental Health",
@@ -568,6 +553,5 @@ const accessCenters = [
     "Walk-Ins Allowed?": "Yes",
     "Eligibility Requirements": "TAY, Family, Adult",
     "Notes ": ""
-}
-]
+  }
 ]
