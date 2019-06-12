@@ -1,4 +1,6 @@
 import React,{Component} from 'react'
+import {NavLink} from 'react-router-dom'
+import * as routes from '../constants/routes'
 
 class NavBar extends Component{
     render() {
@@ -7,7 +9,8 @@ class NavBar extends Component{
                 <a href='home'>Home</a>
                 <a href='about'>About Safe Parking</a>
                 <a href='apply'>Apply</a>
-                <a href='resources'>Resources</a>
+                <NavLink to={routes.HOME}>(OUR MAIN PAGE)</NavLink>
+                <NavLink to={routes.RESOURCE}>Resources</NavLink>
         </div>)
     }
 }

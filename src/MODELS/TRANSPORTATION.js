@@ -1,4 +1,4 @@
-const transportation = [
+export const transportation = [
     {
       PROGRAM_NAME: "Dial-A-Ride",
       SERVICE_PLANNING_AREA: "SPA 1 - Antelope Valley",
