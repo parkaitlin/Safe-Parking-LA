@@ -3,7 +3,7 @@ import {Switch, Route} from 'react-router-dom'
 import * as routes from './constants/routes'
 
 import Home from './Home'
-import Test from '../components/TEST/test'
+import Resources from '../components/Resources'
 import Navbar from './Navbar'
 import '../global.css'
 
@@ -17,7 +17,7 @@ class App extends Component {
         <Navbar/>
         <Switch>
           <Route exact path={routes.HOME} render={()=> <Home/>} />
-          <Route exact path={routes.RESOURCE} render={()=> <Test/>} />
+          <Route exact path={routes.RESOURCE} render={()=> <Resources/>} />
         </Switch>
       </div>
     )
