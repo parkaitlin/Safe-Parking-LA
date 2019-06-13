@@ -1,4 +1,4 @@
-const laundry = [
+export const laundry = [
     {
       PROGRAM_NAME: "Aroma Laundry & Water",
       SERVICE_PLANNING_AREA: "SPA 4 - Metro LA",

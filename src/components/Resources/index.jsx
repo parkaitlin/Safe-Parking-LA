@@ -55,6 +55,33 @@ class Resources extends Component {
     accessPoints: [],
     subAbuseCenters: []
   }
+  handleAll = ()=>{
+    if(!this.state.grocery){
+      this.setState({
+        grocery: true,
+        meal: true,
+        shower: true,
+        laundry: true,
+        transportation: true,
+        storage: true,
+        mentalHealth: true,
+        accessPoint: true,
+        subAbuse: true,
+      })
+    } else {
+      this.setState({
+        grocery: false,
+        meal: false,
+        shower: false,
+        laundry: false,
+        transportation: false,
+        storage: false,
+        mentalHealth: false,
+        accessPoint: false,
+        subAbuse: false,
+      })
+    }
+  }
   handleChange = (e)=>{
     this.setState({
       [e.target.name]: e.target.value
@@ -197,7 +224,8 @@ class Resources extends Component {
         <label>Storage</label><input type="checkbox" name="storage" onChange={this.handleCheck}/><br/>        
         <label>Access Point Centers</label><input type="checkbox" name="accessPoint" onChange={this.handleCheck}/><br/>
         <label>Mental Health Centers</label><input type="checkbox" name="mentalHealth" onChange={this.handleCheck}/><br/>
-        <label>Substance Abuse Centers</label><input type="checkbox" name="subAbuse" onChange={this.handleCheck}/>
+        <label>Substance Abuse Centers</label><input type="checkbox" name="subAbuse" onChange={this.handleCheck}/><br/>
+        <label>Select All</label><input type="checkbox" onChange={this.handleAll}/>
       </div>
       <button onClick={this.getResources}>Find Resources</button>
       {
