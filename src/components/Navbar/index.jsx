@@ -1,9 +1,9 @@
-import React,{Component} from 'react'
+import React, { Component } from 'react'
 import * as routes from '../constants/routes'
 import styled from 'styled-components'
 import call from '../../call.png'
 
-const Wrapper=styled.div`
+const Wrapper = styled.div`
     width: 100vw;
     height: 5vw;
     display: -webkit-inline-box;
@@ -33,7 +33,7 @@ const Wrapper=styled.div`
         }
     }
 `
-const Link=styled.a`
+const Link = styled.a`
     padding-left: 1vw;
     text-decoration:none;
     font-size: 1vw;
@@ -43,14 +43,14 @@ const Link=styled.a`
         transition: .5s;
     }
 `
-const LogoWrap=styled.a`
+const LogoWrap = styled.a`
     padding-left: 0vw;
     height: 3.8vw;
     width: 16vw;
     position: absolute;
     margin-left: -82vw;
 `
-const Logo=styled.div`
+const Logo = styled.div`
     height: 3.8vw;
     width: 16vw;
     -webkit-text-decoration: none;
@@ -59,42 +59,42 @@ const Logo=styled.div`
     background-size: contain;
     background-image: url('https://static1.squarespace.com/static/582dc9ea6a4963e5091cd8cd/t/5c0f1cdb4ae2379685e87b3d/1544494308809/safeparkingla_logo.png?format=1500w');
 `
-const Call=styled.div`
+const Call = styled.div`
     padding-left: 3vw;
     margin-right: 3vw;
     text-decoration:none;
 `
-const Ring=styled.img`
+const Ring = styled.img`
     width: 3.5vw;
     filter: sepia(100%) contrast(100%) saturate(10000%) hue-rotate(-50deg) brightness(.86);
 `
 
-class NavBar extends Component{
+class NavBar extends Component {
     state = {
-         
-    getHome=() => {
-        this.props.history.push('/')
-    },
-    render() {
-        return(
-        <Wrapper>
-                <LogoWrap href='/'><Logo/></LogoWrap>
-                <Link href='https://www.safeparkingla.org/about'>About</Link>
-                <Link href='/apply'>Apply to Park</Link>
-                <Link href={routes.RESOURCE}>Resources</Link>
-                <Link href='https://www.safeparkingla.org/contact'>Contact</Link>
-                <Call
-                    className="phone"
-                    onClick={console.log(`hi`)}>
-                    <Ring src={call}/>
-                    <div style={{
-                        display: 'none'
-                    }}>
-                        RINGRINGRING
+
+        render() {
+            const getHome = () => {
+                this.props.history.push('/')
+            }
+            return (
+                <Wrapper>
+                    <LogoWrap href='/'><Logo /></LogoWrap>
+                    <Link href='https://www.safeparkingla.org/about'>About</Link>
+                    <Link href='/apply'>Apply to Park</Link>
+                    <Link href={routes.RESOURCE}>Resources</Link>
+                    <Link href='https://www.safeparkingla.org/contact'>Contact</Link>
+                    <Call
+                        className="phone"
+                        onClick={console.log(`hi`)}>
+                        <Ring src={call} />
+                        <div style={{
+                            display: 'none'
+                        }}>
+                            RINGRINGRING
                     </div>
-                </Call>
-        </Wrapper>)
+                    </Call>
+                </Wrapper>)
+        }
     }
 }
-
-export default NavBar
+    export default NavBar
