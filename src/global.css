@@ -10,3 +10,11 @@ button:hover, a:hover {
 button {
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.5), 0 15px 40px rgba(166, 173, 201, 0.2);
 }
+ul li::before {
+  color: dodgerblue;
+  content: "\2022";
+  font-size: 4em;
+  position: relative;
+  top: 25px;
+  padding-right: 7px;
+}
