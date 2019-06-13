@@ -64,8 +64,6 @@ class Resources extends Component {
     meals2: [],
     showers2: [],
     laundryOptions2: [],
-    transportOptions2: [],
-    storageOptions2: [],
     mentalHealthCenters2: [],
     accessPoints2: [],
     subAbuseCenters2: []
@@ -195,7 +193,7 @@ class Resources extends Component {
         array.push(transportResource[i])
       }
       this.setState({
-        transportOptions: array
+        transportOptions: array,
       })
     }
     if (storage) {
@@ -209,35 +207,50 @@ class Resources extends Component {
     }
     if (mentalHealth) {
       const array = []
+      const arrayTwo = []
       for (let i = 0; i < mentalHealthResource.length; i++) {
         if (mentalHealthResource[i].NEIGHBORHOOD === city) {
           array.push(mentalHealthResource[i])
         }
+        if (mentalHealthResource[i].NEIGHBORHOOD === cityTwo) {
+          arrayTwo.push(mentalHealthResource[i])
+        }
       }
       this.setState({
-        mentalHealthCenters: array
+        mentalHealthCenters: array,
+        mentalHealthCenters2: arrayTwo
       })
     }
     if (accessPoint) {
       const array = []
+      const arrayTwo = []
       for (let i = 0; i < accessPointResource.length; i++) {
         if (accessPointResource[i].NEIGHBORHOOD === city) {
           array.push(accessPointResource[i])
         }
+        if (accessPointResource[i].NEIGHBORHOOD === cityTwo) {
+          arrayTwo.push(accessPointResource[i])
+        }
       }
       this.setState({
-        accessPoints: array
+        accessPoints: array,
+        accessPoints2: arrayTwo
       })
     }
     if (subAbuse) {
       const array = []
+      const arrayTwo = []
       for (let i = 0; i < subAbuseResource.length; i++) {
         if (subAbuseResource[i].NEIGHBORHOOD === city) {
           array.push(subAbuseResource[i])
         }
+        if (subAbuseResource[i].NEIGHBORHOOD === cityTwo) {
+          arrayTwo.push(subAbuseResource[i])
+        }
       }
       this.setState({
-        subAbuseCenters: array
+        subAbuseCenters: array,
+        subAbuseCenters2: arrayTwo
       })
     }
   }
@@ -316,7 +329,7 @@ class Resources extends Component {
               <SpaSeven />
               <SpaEight />
             </select>
-            <FontAwesomeIcon icon={faTimes} onClick={this.subCity}/>
+            <h6><FontAwesomeIcon icon={faTimes} onClick={this.subCity}/></h6>
               </>
               /* this is the icon */
             : <h6><FontAwesomeIcon icon={faPlusCircle} onClick={this.addCity}/></h6>
@@ -419,57 +432,57 @@ class Resources extends Component {
             {
               meal &&
               <div>
-                <h4>Meals</h4>
+                <h1>Meals</h1>
                 <MealList list={this.state.meals} listTwo={this.state.meals2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
             }
             {
               shower &&
               <div>
-                <h4>Showers</h4>
+                <h1>Showers</h1>
                 <ShowerList list={this.state.showers} listTwo={this.state.showers2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
             }
             {
               laundry &&
               <div>
-                <h4>Laundry</h4>
+                <h1>Laundry</h1>
                 <LaundryList list={this.state.laundryOptions} listTwo={this.state.laundryOptions2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
             }
             {
               transportation &&
               <div>
-                <h4>Transportation</h4>
-                <TransportList list={this.state.transportOptions} />
+                <h1>Transportation</h1>
+                <TransportList list={this.state.transportOptions} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
             }
             {
               storage &&
               <div>
-                <h4>Storage</h4>
-                <StorageList list={this.state.storageOptions} />
+                <h1>Storage</h1>
+                <StorageList list={this.state.storageOptions} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
             }
             {
               mentalHealth &&
               <div>
-                <h4>Mental Health Centers</h4>
-                <MentalHealthList list={this.state.mentalHealthCenters} />
+                <h1>Mental Health Centers</h1>
+                <MentalHealthList list={this.state.mentalHealthCenters} listTwo={this.state.mentalHealthCenters2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
             }
             {
               accessPoint &&
               <div>
-                <h4>Access Point Centers</h4>
-                <AccessList list={this.state.accessPoints} />
+                <h1>Access Point Centers</h1>
+                <AccessList list={this.state.accessPoints} listTwo={this.state.accessPoints2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
             }
             {
               subAbuse &&
               <div>
-                <h4>Substance Abuse Centers</h4>
-                <SubAbuseList list={this.state.subAbuseCenters} />
+                <h1>Substance Abuse Centers</h1>
+                <SubAbuseList list={this.state.subAbuseCenters} listTwo={this.state.subAbuseCenters2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
             }
           </div>
