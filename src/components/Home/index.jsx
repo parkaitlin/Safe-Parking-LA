@@ -7,46 +7,27 @@ import {ParallaxBanner} from 'react-scroll-parallax'
 const Wrapper=styled.div`
 width: 100vw;
     height: 56vw;
-    background: #134b80a3;
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
+    background: #070b0e6b;
     display: inline-flex;
-    -webkit-box-pack: space-around;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: space-around;
-    -webkit-box-pack: space-around;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: space-around;
-    justify-content: space-around;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    justify-content: space-evenly;
     align-items: center;
 `
 const Info=styled.div`
     text-align: center;
     height: 39vw;
-
 `
 const Para=styled.p`
-    width: 30vw;
+    width: 50vw;
     margin: 0 auto;
     height: 10vw;
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: white;
     text-shadow: 0 0 0.1vw white;
+    margin-top: 8vw;
 `
 const Title=styled.h1`
-    font-size: 7vw;
-    margin-top: 3vw;
-    font-style: italic;
+    font-size: 5vw;
+    margin-top: 4vw;
     color: white;
     text-shadow: 0px 2px 20vw black;
 `
@@ -55,72 +36,76 @@ const UpperButton=styled.button`
     height: 5vw;
     border-radius: .5vw;
     font-size: 2vw;
-    color: black;
+    color: white;
+    background: #ffffff87;
     font-weight: 900;
-    font-style: italic;
+    margin-top: 22vw;
+    box-shadow: 0 0 7vw black;
 `
 const LowerButton=styled.button`
     width: 17vw;
     height: 5vw;
+    margin-top: 8vw;
     border-radius: .5vw;
     font-size: 2vw;
+    background: #ffffff45;
+    color: white;
+    box-shadow: 0 0 20vw #00000094;
 `
 const ButtnHolder=styled.div`
     display: inline-flex;
     width: 100vw;
-    justify-content: space-around;
+    justify-content: space-evenly;
 `
 const TopTitle=styled.h1`
     text-align: center;
     position: absolute;
-    width: 100vw;
-    top: 13vw;
-    font-size: 4vw;
+    width: 46vw;
+    top: 10vw;
+    font-size: 5vw;
+    margin-left: 27vw;
     color: white;
-    font-style: italic;
-    border-bottom: solid 9px;
-    text-shadow: 0 0 11.5vw black;
+    text-shadow: 0 0 3.5vw black;
+
 `
 const TopDesc=styled.h3`
     text-align: center;
     position: absolute;
-    width: 100vw;
-    top: 21vw;
-    font-size: 2vw;
+    width: 35vw;
+    margin-left: 32vw;
+    top: 23vw;
+    font-size: 1.5vw;
     text-shadow: 0 0 20vw black;
     color: white;
 `
-const Toggi=styled.div`
-    position: absolute;
-    width: 14vw;
+const SecDesc=styled.div`
     text-align: center;
-    height: 3vw;
-    background: #0000ff96;
-    left: 26vw;
-    top: 23vw;
-    border-radius: 1vw;
+    position: absolute;
+    width: 45vw;
+    top: 29vw;
+    margin-left: 27.5vw;
+    font-size: 1.5vw;
+    text-shadow: 0 0 20vw black;
     color: white;
-    font-size: 2vw;
-    }
-.on{
-    display: relative;
-}
-.off{
-    display: none;
-}
+`
+const Banner=styled.div`
+    position: absolute;
+    width: 100vw;
+    height: 16vw;
+    top: 21.5vw;
+    background: #11679bb0;
+    z-index: -1;
+`
+const Banner2=styled.div`
+    position: absolute;
+    width: 100vw;
+    height: 14vw;
+    top: 111vw;
+    background: #e18f2c6b;
+    z-index: -1;
 `
 
-
 class Home extends Component{
-    state={
-        class:'on'
-    }
-    call=() => {
-        this.setState({class: 'on'})
-    }
-    hangup=() => {
-        this.setState({class:'off'})
-    }
     render() {
         return (
             <div>
@@ -136,7 +121,7 @@ class Home extends Component{
     position: 'absolute',
     overflow: 'none',
     width: '100vw',
-    height: '39vw',
+    height: '41vw',
     zIndex: '-4',
     marginTop: '-10vw',
     marginBottom: '8vw'
@@ -150,34 +135,34 @@ class Home extends Component{
         },
     ]}
     style={{
-    height: '5000px',
     position: 'absolute',
-    overflow: 'hidden',
     width: '100vw',
-    height: '56vw',
+    height: '50vw',
     zIndex: '-4',
-    marginTop: '50vw'
+    marginTop: '85vw',
     }}
 ></ParallaxBanner>
                 <TopTitle>NOBODY PLANS TO BE HOMELESS</TopTitle>
-                <TopDesc><span onClick={this.call} style={{color: 'yellow'}}>Call</span> us now to start the process</TopDesc>
-                <Toggi>914-213-1355</Toggi>
+                <TopDesc>Safe Parking LA provides a safe and legal intervention for people experiencing homelessness who are living in their vehicles.</TopDesc>
+                <SecDesc>In Los Angeles County, there are over 15,700 people living in their vehicles each night. Individuals living in their cars represent over 25% of the population of people experiencing homelessness in LA County. We are here to help.</SecDesc>
             <Wrapper>
-                <UpperButton>Apply to Park</UpperButton>
-                <UpperButton>Additional Resources</UpperButton>
+                <UpperButton>APPLY TO PARK</UpperButton>
+                <UpperButton>ADDITIONAL RESOURCES</UpperButton>
+                <Banner/>
             </Wrapper>
             <Testimonials/>
                 <Info>
                     <div >
-                        <Title>What we do</Title>
+                        <Title>WHAT WE DO</Title>
                         <Para>Aliqua culpa esse culpa ipsum veniam nostrud dolor ea ad. Occaecat fugiat excepteur occaecat voluptate elit. Nulla culpa velit qui est elit officia anim. Id exercitation mollit consequat sunt consequat et quis dolor excepteur incididunt. Mollit ex consectetur in voluptate duis dolore amet culpa labore.</Para>
+                    <Banner2/>
                     </div>
                     <ButtnHolder>
-                        <LowerButton>Apply for Parking</LowerButton>
-                        <LowerButton>Additional Resources</LowerButton>
+                        <LowerButton>APPLY FOR PARKING</LowerButton>
+                        <LowerButton>ADDITIONAL RESOURCES</LowerButton>
                     </ButtnHolder>
                 </Info>
-            </div>
+                </div>
         )
     }
 }
