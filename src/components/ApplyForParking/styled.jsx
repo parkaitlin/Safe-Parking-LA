@@ -38,13 +38,14 @@ export const MainContainer = styled.div`
             position: relative;
             left: 10em;
             font-family: Nunito;
-
+            margin-bottom: -2em;
+            width: 20em;
           }
         }
       }
     ol {
       li {
-        margin-bottom: 3em;
+        margin-bottom: 1.5em;
         text-align: center;
         font-size: 1.5em;
         list-style-position: inside;

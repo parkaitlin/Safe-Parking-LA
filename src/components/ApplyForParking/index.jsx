@@ -19,7 +19,10 @@ const ApplyForParking = () => {
           <br /> */}
 
           <aside>
-            <h1>Amenities</h1>
+
+            <h1>
+            Our mission is to provide safe parking options for people experiencing homelessness in their vehicles. Each parking lot includes the following amenities:
+            </h1>
             <ul>
               <li>Guards</li>
               <li>Bathrooms</li>
@@ -27,8 +30,11 @@ const ApplyForParking = () => {
             </ul>
           </aside>
 
-          <h1>Process</h1>
+          <br />
+          <br />
 
+          <h1>Process</h1>
+          
           <br />
 
           <ol>
