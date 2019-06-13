@@ -38,7 +38,7 @@ export const MainContainer = styled.div`
             position: relative;
             left: 10em;
             font-family: Nunito;
-            margin-bottom: -2em;
+
             width: 20em;
           }
         }
@@ -85,7 +85,7 @@ export const MainContainer = styled.div`
         }
         p {
           padding-top: 1em;
-          color: grey;
+          font-weight: bold;
           font-style: italic;
         }
       }
