@@ -1,4 +1,12 @@
 import React, {Component} from 'react'
+import SpaOne from './spaOne'
+import SpaTwo from './spaTwo'
+import SpaThree from './spaThree'
+import SpaFour from './spaFour'
+import SpaFive from './spaFive'
+import SpaSix from './spaSix'
+import SpaSeven from './spaSeven'
+import SpaEight from './spaEight'
 
 //models
 
@@ -52,14 +60,22 @@ class Resources extends Component {
     // }
   }
   render(){
+    const {city, grocery, meal, restroom, shower, laundry, transportation, storage, mentalHealth, accessPoint, subAbuse} = this.state
     return (
       <div>
-      <h1>Please select your Region</h1>
-      <p>
-        {/* { transportation[0].PROGRAM_NAME } */}
-      </p>
-      <label>Location: </label>
-      {/* <input className="state-input" list='cities' name='state' placeholder='state' value= onChange={this.handleChange} /> */}
+      <h1>Let's start with your neighborhood:</h1>
+      <select className="city-input" name='city' placeholder='Select a City Los Angeles' value={city} onChange={this.handleChange}>
+        <option>- - -</option>
+        <SpaOne/>
+        <SpaTwo/>
+        <SpaThree/>
+        <SpaFour/>
+        <SpaFive/>
+        <SpaSix/>
+        <SpaSeven/>
+        <SpaEight/>
+
+      </select>
 
       <h2>I need ...</h2>
         <label>a meal</label><input type="checkbox" name="meal" value='true' onChange={this.handleChange}/>
@@ -71,9 +87,13 @@ class Resources extends Component {
         <label>to find an access point</label><input type="checkbox" name="accessPoint" value='true' onChange={this.handleChange}/>
         <label>to find a center for mental health</label><input type="checkbox" name="mentalHealth" value='true' onChange={this.handleChange}/>
         <label>to find a center for substance abuse</label><input type="checkbox" name="subAbuse" value='true' onChange={this.handleChange}/>
+      <button>Find Resources</button>
     </div>
     )
   }
 }
 
 export default Resources;
+<p>
+  {/* { transportation[0].PROGRAM_NAME } */}
+</p>
