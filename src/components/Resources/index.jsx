@@ -257,6 +257,19 @@ class Resources extends Component {
               <SpaSeven />
               <SpaEight />
             </select>
+            <select className="city-input" name='cityTwo' placeholder='Select a City Los Angeles' value={city} onChange={this.handleChange}>
+              <option>
+                Select Region ↓
+              </option>
+              <SpaOne />
+              <SpaTwo />
+              <SpaThree />
+              <SpaFour />
+              <SpaFive />
+              <SpaSix />
+              <SpaSeven />
+              <SpaEight />
+            </select>
           </div>
 
           <h2>What I need ...</h2>
