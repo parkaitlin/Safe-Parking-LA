@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 
 const Img=styled.img`
-    clip-path: circle(28% at 60% 43%);
+    clip-path: circle(28% at 58% 43%);
     height: 18vw;
     margin-top: 3.5vw;
     margin-left: -7vw;
@@ -84,7 +84,7 @@ class People extends Component{
                     <Img src={require('../../picture0.jpg')} alt="HEY! WHERE'S THE PICC???"/>
                 </Indiv>
                 <Quoth>
-                    <Para>"Hey Here is a quote, it was a nice stay and it helped me get on my feet. Thank you!"</Para>
+                    <Para>"MJ is a veteran: “Without Safe Parking LA, MJ might be one of the 35,000 people literally living on the streets and sidewalks and alleys of LA.”"</Para>
                 </Quoth>
             </Pic0>
             <Pic1>
@@ -92,7 +92,7 @@ class People extends Component{
                     <Img src={require('../../picture1.jpg')} alt="HEY! WHERE'S THE PICC???"/>
                 </Indiv>
                 <Quoth>
-                    <Para>"Oh here's another one!"</Para>
+                    <Para>"Mindy, a cosmetologist, barber, and esthetician impacted by the economic downturn: “Despite these obstacles, Mindy has continued to persevere and reach out to social service organizations for help.”"</Para>
                 </Quoth>
             </Pic1>
             <Pic2>
@@ -100,7 +100,7 @@ class People extends Component{
                     <Img src={require('../../picture2.jpg')} alt="HEY! WHERE'S THE PICC???"/>
                 </Indiv>
                 <Quoth>
-                    <Para>"Quotes again, quotes everywhere!"</Para>
+                    <Para>"Michelle, a dog trainer and native Angeleno: “Since coming to Safe Parking LA, Michelle has had a safe place to sleep at night, guarded by a security guard and access to a restroom and electrical outlets. ”"</Para>
                 </Quoth>
             </Pic2>
         </Wrapper>)
