@@ -23,6 +23,7 @@ export const ResourcesContainer = styled.div`
   }
   @media(max-width: 900px) {
     text-align: center;
+    height: 220vh;
     main {
       padding-top: 5em;
       padding-left: 1em;
