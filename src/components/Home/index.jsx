@@ -3,6 +3,7 @@ import Testimonials from '../Testimonials'
 import styled from 'styled-components'
 import {ParallaxBanner} from 'react-scroll-parallax'
 
+
 const Wrapper=styled.div`
 width: 100vw;
     height: 56vw;
@@ -31,16 +32,21 @@ width: 100vw;
 `
 const Info=styled.div`
     text-align: center;
-    height: 36vw;
+    height: 39vw;
 
 `
 const Para=styled.p`
     width: 30vw;
     margin: 0 auto;
     height: 10vw;
+    font-size: 1vw;
 `
 const Title=styled.h1`
     font-size: 7vw;
+    margin-top: 3vw;
+    font-style: italic;
+    color: white;
+    text-shadow: 0 0 0.5vw black;
 `
 const UpperButton=styled.button`
     width: 17vw;
@@ -66,7 +72,7 @@ const TopTitle=styled.h1`
     text-align: center;
     position: absolute;
     width: 100vw;
-    top: 9vw;
+    top: 13vw;
     font-size: 5vw;
     color: white;
     font-style: italic;
@@ -76,7 +82,7 @@ const TopDesc=styled.h3`
     text-align: center;
     position: absolute;
     width: 100vw;
-    top: 19vw;
+    top: 21vw;
     font-size: 2vw;
     color:white;
 `
@@ -96,16 +102,14 @@ class Home extends Component{
     style={{
     height: '5000px',
     position: 'absolute',
-    overflow: 'hidden',
+    overflow: 'none',
     width: '100vw',
-    height: '55vw',
+    height: '39vw',
     zIndex: '-4',
-    marginTop: '-6vw',
-    marginBottom: '5vw'
+    marginTop: '-10vw',
+    marginBottom: '8vw'
     }}
->
-    <h1>No One Plans To Be Homeless</h1>
-</ParallaxBanner>
+></ParallaxBanner>
 <ParallaxBanner
     layers={[
         {
@@ -127,7 +131,7 @@ class Home extends Component{
                 <TopDesc><span style={{color:'yellow'}}>Call</span> us now to start the process</TopDesc>
             <Wrapper>
                 <UpperButton>Apply to Park</UpperButton>
-                <UpperButton>Addional Resources</UpperButton>
+                <UpperButton>Additional Resources</UpperButton>
             </Wrapper>
             <Testimonials/>
                 <Info>
