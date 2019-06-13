@@ -200,7 +200,6 @@ class Resources extends Component {
   render() {
     const { city, grocery, meal, shower, laundry, transportation, storage, mentalHealth, accessPoint, subAbuse } = this.state
     return (
-
       <ResourcesContainer>
         <main>
 
@@ -261,7 +260,7 @@ class Resources extends Component {
 
           <h2>What I need ...</h2>
 
-          {/* 5 */} {/* Labels */}
+          {/* 5 */} {/* Label Checkboxes */}
           <div>
             <div>
               <input type="checkbox" name="meal" onClick={this.handleCheck} />
@@ -337,10 +336,11 @@ class Resources extends Component {
             </div>
           </div>
 
-
-          <button onClick={this.getResources}>
-            Search
-          </button>
+          <section>
+            <button onClick={this.getResources}>
+              Search
+            </button>
+          </section>
 
           {/* 6 */} {/* Search Queries */}
           <div>
