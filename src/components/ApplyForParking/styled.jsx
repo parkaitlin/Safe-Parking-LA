@@ -80,6 +80,11 @@ export const MainContainer = styled.div`
       > h1:nth-of-type(1) {
           font-size: 1.em;
       }
+      ul {
+        li {
+          font-size: 1.2em;
+        }
+      }
       ol {
         li {
           font-size: 1.2em
@@ -102,6 +107,7 @@ export const MainContainer = styled.div`
           padding-top: 2em;
           padding-bottom: 2em;
           button {
+            background-color: white;
           }
         }
       }
