@@ -1,4 +1,4 @@
-const storage = [
+export const storage = [
     {
       PROGRAM_NAME: "The BIN",
       SERVICE_PLANNING_AREA: "SPA 4 - Metro LA",
