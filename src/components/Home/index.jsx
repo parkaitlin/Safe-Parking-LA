@@ -23,7 +23,16 @@ const Para=styled.p`
     font-size: 1.5vw;
     color: white;
     text-shadow: 0 0 0.1vw white;
-    margin-top: 8vw;
+    margin-top: 3vw;
+`
+const Para2=styled.p`
+    width: 50vw;
+    margin: 0 auto;
+    height: 10vw;
+    font-size: 1.5vw;
+    color: white;
+    text-shadow: 0 0 0.1vw white;
+    margin-top: -5vw;
 `
 const Title=styled.h1`
     font-size: 5vw;
@@ -35,20 +44,25 @@ const UpperButton=styled.button`
     width: 17vw;
     height: 5vw;
     border-radius: .5vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: white;
-    background: #ffffff87;
-    font-weight: 900;
+    background: #11679b;
+    border: black;
+    font-weight: 300;
+    font-family: Nunito;
     margin-top: 22vw;
     box-shadow: 0 0 7vw black;
 `
 const LowerButton=styled.button`
     width: 17vw;
     height: 5vw;
-    margin-top: 8vw;
+    margin-top: 4vw;
     border-radius: .5vw;
-    font-size: 2vw;
-    background: #ffffff45;
+    font-size: 1.5vw;
+    font-weight: 300;
+    font-family: Nunito;
+    background: #11679b;
+    border: none;
     color: white;
     box-shadow: 0 0 20vw #00000094;
 `
@@ -73,18 +87,22 @@ const TopDesc=styled.h3`
     position: absolute;
     width: 35vw;
     margin-left: 32vw;
+    font-family: nunito;
     top: 23vw;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     text-shadow: 0 0 20vw black;
     color: white;
+    font-weight: 300;
 `
 const SecDesc=styled.div`
     text-align: center;
     position: absolute;
     width: 45vw;
+    font-family: nunito;
     top: 29vw;
     margin-left: 27.5vw;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
+    font-weight: 300;
     text-shadow: 0 0 20vw black;
     color: white;
 `
@@ -99,8 +117,8 @@ const Banner=styled.div`
 const Banner2=styled.div`
     position: absolute;
     width: 100vw;
-    height: 14vw;
-    top: 111vw;
+    height: 17vw;
+    top: 108.5vw;
     background: #e18f2c6b;
     z-index: -1;
 `
@@ -154,7 +172,11 @@ class Home extends Component{
                 <Info>
                     <div >
                         <Title>WHAT WE DO</Title>
-                        <Para>Aliqua culpa esse culpa ipsum veniam nostrud dolor ea ad. Occaecat fugiat excepteur occaecat voluptate elit. Nulla culpa velit qui est elit officia anim. Id exercitation mollit consequat sunt consequat et quis dolor excepteur incididunt. Mollit ex consectetur in voluptate duis dolore amet culpa labore.</Para>
+                        <Para>Our mission is simple, we want to provide safe parking options for people experiencing homelessness in their vehicles across Los Angeles.</Para>
+                        <Para2>Founded in 2016, Safe Parking LA is a coordinating organization which assists homeless families and individuals living in their vehicles. We support the implementation of "Safe Parking Lots", which provide individuals a safe place to park each night, restroom access, a security guard, and social service resources.
+                                We also offer additional resources to help get you back into a home.
+                        </Para2>
+
                     <Banner2/>
                     </div>
                     <ButtnHolder>

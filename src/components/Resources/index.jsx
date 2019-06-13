@@ -268,7 +268,7 @@ class Resources extends Component {
               On January 7, 2017 Los Angeles Municipal Code (LAMC) 85.03 was enacted by the Los Angeles City Council. The ordinance maps streets where individuals living in their vehicles can park overnight (9 PM - 6 AM). These streets are marked on the map as "Green Streets". This ordinance will expire July 1, 2018, unless extended by the Los Angeles City Council.
               <br />
               <br />
-              More "Green Streets" information and all 21 area maps can be found here.
+              More "Green Streets" information and all 21 area maps can be found <a href='https://www.lacity.org/for-residents/popular-information/comprehensive-homeless-strategy-implementation/los-angeles-municipal-code-lamc-8502-vehicle-dwelling' style={{color: '#11679b'}}>here.</a>
             </p>
           </div>
 
