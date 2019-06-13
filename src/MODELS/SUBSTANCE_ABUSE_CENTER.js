@@ -1,4 +1,4 @@
-const subAbuse = [
+export const subAbuse = [
   {
     PROGRAM_NAME: "N/A",
     SERVICE_PLANNING_AREA: "SPA 3 - San Gabriel Valley",

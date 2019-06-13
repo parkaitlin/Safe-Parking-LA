@@ -1,4 +1,4 @@
-const mentalHealth = [
+export const mentalHealth = [
     {
       PROGRAM_NAME: "Exodus Mental Health",
       SERVICE_PLANNING_AREA: "SPA 4 - Metro LA",
