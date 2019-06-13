@@ -14,4 +14,7 @@ export const Title = styled.div`
     text-align: left;
     padding-left: 1em;
   }
+  @media(max-width: 650px)  {
+    font-size: 1em;
+  }
 `

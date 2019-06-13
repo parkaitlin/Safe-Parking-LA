@@ -98,13 +98,18 @@ export const MainContainer = styled.div`
    > div {
       width: 100%;
       > h1:nth-of-type(1) {
-          font-size: 1.em;
+        font-size: 2em;
       }
-      aside {
+      > aside {
         position: none;
+        h1 {
+          font-size: 20px;
+        }
         ul {
           li {
             left: 0;
+            width: 17em;
+            font-size: 20px;
           }
         }
       }

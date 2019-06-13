@@ -160,24 +160,34 @@ class Resources extends Component {
     }
     if (shower) {
       const array = []
+      const arrayTwo = []
       for (let i = 0; i < showerResource.length; i++) {
         if (showerResource[i].NEIGHBORHOOD === city) {
           array.push(showerResource[i])
         }
+        if (secondCity && showerResource[i].NEIGHBORHOOD === cityTwo) {
+          arrayTwo.push(showerResource[i])
+        }
       }
       this.setState({
-        showers: array
+        showers: array,
+        showers2: arrayTwo
       })
     }
     if (laundry) {
       const array = []
+      const arrayTwo = []
       for (let i = 0; i < laundryResource.length; i++) {
         if (laundryResource[i].NEIGHBORHOOD === city) {
           array.push(laundryResource[i])
         }
+        if (secondCity && laundryResource[i].NEIGHBORHOOD === cityTwo) {
+          arrayTwo.push(laundryResource[i])
+        }
       }
       this.setState({
-        laundryOptions: array
+        laundryOptions: array,
+        laundryOptions2: arrayTwo
       })
     }
     if (transportation) {
@@ -338,25 +348,19 @@ class Resources extends Component {
               </div>
 
               <div>
-                <input type="checkbox" name="shower" onChange={this.handleCheck} />
-                <label>
-                  Showers
-                </label>
+                <h4>Meals</h4>
+                <MealList list={this.state.meals} listTwo={this.state.meals2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
               
               <div>
-                <input type="checkbox" name="laundry" onChange={this.handleCheck} />
-                <label>
-                  Laundry
-                </label>
+                <h4>Showers</h4>
+                <ShowerList list={this.state.showers} listTwo={this.state.showers2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
 
 
               <div>
-                <input type="checkbox" name="transportation" onChange={this.handleCheck} />
-                <label>
-                  Transportation
-                </label>
+                <h4>Laundry</h4>
+                <LaundryList list={this.state.laundryOptions} listTwo={this.state.laundryOptions2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
               
               <div>

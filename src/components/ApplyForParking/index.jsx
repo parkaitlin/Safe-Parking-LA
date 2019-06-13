@@ -7,7 +7,7 @@ const ApplyForParking = () => {
     <>
       <Title>
         <h1>
-          Apply To Park
+          APPLY TO PARK
         </h1>
       </Title>
       <MainContainer>
