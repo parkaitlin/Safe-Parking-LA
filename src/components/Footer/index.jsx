@@ -1,6 +1,11 @@
 import React,{Component} from 'react'
 import styled from 'styled-components'
 
+//icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faInstagram, faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
+
 const Wrapper = styled.div`
     height: 12vw;
     width: 100vw;
@@ -9,6 +14,12 @@ const Wrapper = styled.div`
     background: #020048;
     display: inline-flex;
     justify-content: space-between;
+    
+    .sm-links {
+        color: white;
+        font-size: 3vw;
+        margin: 1vw;
+    }
 `
 const Emerg=styled.div`
     color: white;
@@ -44,7 +55,11 @@ class Footer extends Component{
                     <Para>(323) 644-2200</Para>
                 </Emerg>
                 <Social><Title>SOCIAL NETWORKS</Title>
-                    <Para></Para>
+                    <div>
+                        <a href="https://www.facebook.com/SafeParkingLA/" target='_blank' ><FontAwesomeIcon icon={faFacebookSquare} className="sm-links"/></a>
+                        <a href="https://www.instagram.com/safeparking_la/" target='_blank' ><FontAwesomeIcon icon={faInstagram} className="sm-links"/></a>
+                        <a href="mailto:info@safeparkingla.org" target='_blank' ><FontAwesomeIcon icon={faEnvelope} className="sm-links"/></a>
+                    </div>
                 </Social>
                 <Contact><Title>EXTERNAL LINKS</Title>
                     <Para></Para>
