@@ -10,15 +10,15 @@ import SpaEight from './spaEight'
 
 //models
 
-import { accessPoint } from '../../MODELS/ACCESS_POINTS_CENTERS'
-import { groceries } from '../../MODELS/GROCERIES'
-import { laundries } from '../../MODELS/LAUNDRY'
-import { meals } from '../../MODELS/MEALS'
-import { mentalHealthCenters} from '../../MODELS/MENTAL_HEALTH'
-import { showers } from '../../MODELS/SHOWER'
-import { storages } from '../../MODELS/STORAGE'
-import { subAbuseCenters } from '../../MODELS/SUBSTANCE_ABUSE_CENTER'
-import { transportationOptions } from '../../MODELS/TRANSPORTATION'
+import { accessPoint as accessPointResource } from '../../MODELS/ACCESS_POINTS_CENTERS'
+import { groceries as groceryResource } from '../../MODELS/GROCERIES'
+import { laundryResource } from '../../MODELS/LAUNDRY'
+import { mealResource } from '../../MODELS/MEALS'
+import { mentalHealthResource} from '../../MODELS/MENTAL_HEALTH'
+import { showerResource } from '../../MODELS/SHOWER'
+import { storageResource } from '../../MODELS/STORAGE'
+import { subAbuseResource } from '../../MODELS/SUBSTANCE_ABUSE_CENTER'
+import { transportationResource } from '../../MODELS/TRANSPORTATION'
 
 class Resources extends Component {
   state = {
@@ -33,18 +33,16 @@ class Resources extends Component {
     accessPoint: false,
     subAbuse: false,
     city: '',
-    // resources: [
-    //   grocery = [],
-    //   meal = [],
-    //   restroom = [],
-    //   shower = [],
-    //   laundry = [],
-    //   transportation = [],
-    //   storage = [],
-    //   mentalHealth = [],
-    //   accessPoint = [],
-    //   subAbuse = []
-    // ]
+    groceries: [],
+    meals: [],
+    restrooms: [],
+    showers: [],
+    laundryOptions: [],
+    transport: [],
+    storageOptions: [],
+    mentalHealthCenters: [],
+    accessPoints: [],
+    subAbuseCenters: []
   }
   handleChange = (e)=>{
     this.setState({
@@ -52,12 +50,21 @@ class Resources extends Component {
     })
   }
   getResources = ()=>{
-    //const {grocery, meal, restroom, shower, laundry, transportation, storage, mentalHealth, accessPoint, subAbuse} = this.state
-    // if(this.state.grocery){
-    //   for(let i = 0; i < groceries.length; i++){
-    //     if(groceries[i].NEIGHBORHOOD === '')
-    //   }
-    // }
+    console.log('clicked')
+    const {grocery, meal, restroom, shower, laundry, transportation, storage, mentalHealth, accessPoint, subAbuse, city} = this.state
+    if(grocery === 'true'){
+      console.log('grocery is true')
+      const array = []
+      for(let i = 0; i < groceryResource.length; i++){
+        if(groceryResource[i].NEIGHBORHOOD === city){
+          array.push(groceryResource[i])
+        }
+      }
+      console.log(array)
+      // this.setState({
+      //   groceries: array
+      // })
+    }
   }
   render(){
     const {city, grocery, meal, restroom, shower, laundry, transportation, storage, mentalHealth, accessPoint, subAbuse} = this.state
@@ -78,22 +85,36 @@ class Resources extends Component {
       </select>
 
       <h2>I need ...</h2>
-        <label>a meal</label><input type="checkbox" name="meal" value='true' onChange={this.handleChange}/>
-        <label>groceries</label><input type="checkbox" name="grocery" value='true' onChange={this.handleChange}/>
-        <label>a restroom</label><input type="checkbox" name="restroom" value='true' onChange={this.handleChange}/>
-        <label>a shower</label><input type="checkbox" name="shower" value='true' onChange={this.handleChange}/>
-        <label>to do laundry</label><input type="checkbox" name="laundry" value='true' onChange={this.handleChange}/>
-        <label>transportation</label><input type="checkbox" name="transportation" value='true' onChange={this.handleChange}/>        
-        <label>to find an access point</label><input type="checkbox" name="accessPoint" value='true' onChange={this.handleChange}/>
-        <label>to find a center for mental health</label><input type="checkbox" name="mentalHealth" value='true' onChange={this.handleChange}/>
-        <label>to find a center for substance abuse</label><input type="checkbox" name="subAbuse" value='true' onChange={this.handleChange}/>
-      <button>Find Resources</button>
+      <div>
+        <label>a meal</label><input type="checkbox" name="meal" value={true} onChange={this.handleChange}/>
+        <label>groceries</label><input type="checkbox" name="grocery" value={true} onChange={this.handleChange}/>
+        <label>a restroom</label><input type="checkbox" name="restroom" value={true} onChange={this.handleChange}/>
+        <label>a shower</label><input type="checkbox" name="shower" value={true} onChange={this.handleChange}/>
+        <label>to do laundry</label><input type="checkbox" name="laundry" value={true} onChange={this.handleChange}/>
+        <label>transportation</label><input type="checkbox" name="transportation" value={true} onChange={this.handleChange}/>        
+        <label>to find an access point</label><input type="checkbox" name="accessPoint" value={true} onChange={this.handleChange}/>
+        <label>to find a center for mental health</label><input type="checkbox" name="mentalHealth" value={true} onChange={this.handleChange}/>
+        <label>to find a center for substance abuse</label><input type="checkbox" name="subAbuse" value={true} onChange={this.handleChange}/>
+      </div>
+      <button onClick={this.getResources}>Find Resources</button>
+      {
+        grocery
+        && <div>
+          <h4>Groceries</h4>
+          <div>
+            <p>operator</p>
+            <p>phone number</p>
+            <p>hours of operation</p>
+            <p>eligibility</p>
+            <p>website</p>
+            <p>address</p>
+          </div>
+        </div>
+      }
     </div>
     )
   }
 }
 
 export default Resources;
-<p>
   {/* { transportation[0].PROGRAM_NAME } */}
-</p>
