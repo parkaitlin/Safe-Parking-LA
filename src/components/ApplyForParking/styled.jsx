@@ -19,35 +19,38 @@ export const MainContainer = styled.div`
         padding-top: 3em;
         text-align: center;
       }
-      > h1:nth-of-type(3) {
-        padding-top: 3em;
-      }
-      ul {
-        li {
-          margin-bottom: 0.5em;
+      aside {
+        display: flex;
+        flex-direction: column;
+        > h1 {
+          padding-top: 3em;
           text-align: center;
-          list-style: none;
-          font-size: 1.5em;
+          font-size: 2em;
+        }
+        ul {
+          li {
+            text-align: left;
+            /* list-style: inside; */
+            font-size: 1.5em;
+            list-style: none;
+            position: relative;
+            left: 12em;
+          }
         }
       }
     ol {
       li {
         margin-bottom: 1em;
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-        list-style: none;
+        text-align: center;
         font-size: 1.5em;
-        span {
-          font-weight: bolder;
-          border-bottom: 1px solid black;
-        }
+        list-style-position: inside;
       }
     }
     section {
       display: flex;
       margin-left: 1em;
       margin-right: 1em;
-      margin-top: 3em;
+      margin-top: 10em;
       div:nth-of-type(1) {
         img {
           height: 340.5px;
@@ -69,6 +72,13 @@ export const MainContainer = styled.div`
           border-radius: 4px;
           border: 2px solid grey;
           font-size: 1.2em;
+          background-color: dodgerblue;
+          color: white;
+        }
+        p {
+          padding-top: 1em;
+          color: grey;
+          font-style: italic;
         }
       }
     }
@@ -80,9 +90,12 @@ export const MainContainer = styled.div`
       > h1:nth-of-type(1) {
           font-size: 1.em;
       }
-      ul {
-        li {
-          font-size: 1.2em;
+      aside {
+        position: none;
+        ul {
+          li {
+            left: 0;
+          }
         }
       }
       ol {
@@ -106,9 +119,6 @@ export const MainContainer = styled.div`
           padding: 0;
           padding-top: 2em;
           padding-bottom: 2em;
-          button {
-            background-color: white;
-          }
         }
       }
    }
