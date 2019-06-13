@@ -200,7 +200,6 @@ class Resources extends Component {
   render() {
     const { city, grocery, meal, shower, laundry, transportation, storage, mentalHealth, accessPoint, subAbuse } = this.state
     return (
-
       <ResourcesContainer>
         <main>
 
