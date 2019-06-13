@@ -22,6 +22,16 @@ const Wrapper=styled.div`
     margin-top: 0vw;
     -webkit-text-decoration: none;
     text-decoration: none;
+    .phone {
+        > div {
+            color: red;
+            background-color: black;
+            height: 50px;
+            position: absolute;
+            left: 77%;
+            width: 180px;
+        }
+    }
 `
 const Link=styled.a`
     padding-left: 1vw;
@@ -42,7 +52,7 @@ const Logo=styled.div`
     -webkit-text-decoration: none;
     text-decoration: none;
     background-size: contain;
-    background-image: url('https://static1.squarespace.com/static/582dc9ea6a4963e5091cd8cd/t/5c0f1cdb4ae2379685e87b3d/1544494308809/safeparkingla_logo.png?format=1500w')
+    background-image: url('https://static1.squarespace.com/static/582dc9ea6a4963e5091cd8cd/t/5c0f1cdb4ae2379685e87b3d/1544494308809/safeparkingla_logo.png?format=1500w');
 `
 const Call=styled.div`
     padding-left: 3vw;
@@ -51,10 +61,13 @@ const Call=styled.div`
 `
 const Ring=styled.img`
     width: 3.5vw;
-    filter: sepia(100%) contrast(100%) saturate(10000%) hue-rotate(-50deg) brightness(.86)
+    filter: sepia(100%) contrast(100%) saturate(10000%) hue-rotate(-50deg) brightness(.86);
 `
 
 class NavBar extends Component{
+    state = {
+         
+    }
     render() {
         return(
         <Wrapper>
@@ -64,7 +77,16 @@ class NavBar extends Component{
                 <Link href={routes.HOME}>Home</Link>
                 <Link href={routes.RESOURCE}>Resources</Link>
                 <Link href='https://www.safeparkingla.org/contact'>Contact</Link>
-                <Call><Ring src={call}/></Call>
+                <Call
+                    className="phone"
+                    onClick={console.log(`hi`)}>
+                    <Ring src={call}/>
+                    <div style={{
+                        display: 'none'
+                    }}>
+                        RINGRINGRING
+                    </div>
+                </Call>
         </Wrapper>)
     }
 }
