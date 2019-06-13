@@ -1,36 +1,12 @@
 import styled from 'styled-components'
 
 export const ResourcesContainer = styled.div`
-  height: 100vh;
+  height: 150vh;
   display: flex;
   justify-content: center;
-  background-color: red;
+  padding: 2em;
   main {
-    background-color: grey;
-    width: 1000px;
-    > div:nth-of-type(1) {
-      display: flex;
-      flex-direction: column;
-    }
-    > div:nth-of-type(5) {
-      > div {
-        > input {
-          height: 25px;
-          width: 25px;
-        }
-      }
-    }
-  }
-  @media(max-width: 900px) {
-    text-align: center;
-    height: 220vh;
-    main {
-      padding-top: 5em;
-      padding-left: 1em;
-      padding-right: 1em;
-      width: 500px;
-      background-color: white;
-      h1 {
+    h1 {
         font-family: Nunito;
         font-size: 26px;
         color: #e1902d;
@@ -46,6 +22,7 @@ export const ResourcesContainer = styled.div`
         font-size: 16px;
         color: #5e5e5e;
         font-family: Nunito;
+        width: 500px;
       }
       button {
         width: 180px;
@@ -59,21 +36,41 @@ export const ResourcesContainer = styled.div`
         margin-top: 2.5em;
         margin-bottom: 2.5em;
       }
-      > div:nth-of-type(1) {
+    width: 1000px;
+    > div:nth-of-type(1) {
+      display: flex;
+      flex-direction: column;
+      padding-left: 12em;
+      padding-bottom: 2em;
+    }
+    > div:nth-of-type(2) {
+      padding-left: 12em;
+      padding-bottom: 2em;
+    }
+    > div:nth-of-type(3) {
+      padding-left: 12em;
+      padding-bottom: 4em;
+    }
+    > div:nth-of-type(4) {
+      display: flex;
+      justify-content: center;
+      select {
+        width: 240px;
+        height: 48px;
+        background-color: #13678b;
+        color: #FFF;
       }
-      > div:nth-of-type(4) {
-        select {
-          width: 240px;
-          height: 48px;
-          background-color: #13678b;
-          color: #FFF;
-          font-size: 16px;
-          padding-left: 3.5em;
-          option {
-          }
-        }
+    }
+    h2 {
+      text-align: center;
+    }
+    section {
+      display: flex;
+      justify-content: center;
+      button {
       }
-      > div:nth-of-type(5) {
+    }
+    > div:nth-of-type(5) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -85,7 +82,6 @@ export const ResourcesContainer = styled.div`
             margin-left: 4em;
           }
           > label {
-            color: red;
             text-align: left;
             width: 250px;
             margin-left: 2em;
@@ -95,6 +91,37 @@ export const ResourcesContainer = styled.div`
             margin-bottom: 1em;
           }
         }
+      }
+      > div {
+        > input {
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
+  }
+  @media(max-width: 900px) {
+    text-align: center;
+    height: 160vh;
+    main {
+      padding-top: 5em;
+      padding-left: 1em;
+      padding-right: 1em;
+      width: 500px;
+      background-color: white;
+      p {
+        width: 100%;
+      }
+      > div:nth-of-type(1) {
+        padding-left: 0;
+      }
+      > div:nth-of-type(2) {
+        padding-left: 0;
+      }
+      > div:nth-of-type(3) {
+        padding-left: 0;
+      }
+      > div:nth-of-type(4) {
       }
     }
   }

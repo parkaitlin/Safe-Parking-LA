@@ -260,7 +260,7 @@ class Resources extends Component {
 
           <h2>What I need ...</h2>
 
-          {/* 5 */} {/* Labels */}
+          {/* 5 */} {/* Label Checkboxes */}
           <div>
             <div>
               <input type="checkbox" name="meal" onClick={this.handleCheck} />
@@ -336,10 +336,11 @@ class Resources extends Component {
             </div>
           </div>
 
-
-          <button onClick={this.getResources}>
-            Search
-          </button>
+          <section>
+            <button onClick={this.getResources}>
+              Search
+            </button>
+          </section>
 
           {/* 6 */} {/* Search Queries */}
           <div>
