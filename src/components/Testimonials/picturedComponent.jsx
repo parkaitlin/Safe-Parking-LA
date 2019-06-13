@@ -1,30 +1,22 @@
 import React,{Component} from 'react'
 import styled from 'styled-components'
-import background from '../../background1.jpg'
-import {ParallaxBanner} from 'react-scroll-parallax'
 
 
 
 const Img=styled.img`
-    -webkit-clip-path: circle(28% at 60% 43%);
     clip-path: circle(28% at 60% 43%);
-    height: 10vw;
-    margin-top: -6vw;
+    height: 18vw;
+    margin-top: 3.5vw;
+    margin-left: -7vw;
 `
 const Quoth=styled.div`
     position: absolute;
     height: 5vw;
     text-align: center;
-    margin-top: 2vw;
+    margin-top: 10.5vw;
     margin-left: -0.5vw;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    filter: drop-shadow(0vw 0vw 1vw #00000075);
+    filter: drop-shadow(0vw 0vw 1vw #0000003d);
 `
 const Pic0 = styled.div`
     display: flex;
@@ -43,16 +35,10 @@ const Pic2 = styled.div`
 `
 const Wrapper = styled.div`
     overflow-wrap: break-word;
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     margin-top: -4vw;
     width: 100vw;
-    height: 12vw;
-    -webkit-box-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-    -ms-flex-pack: space-evenly;
+    height: 40vw;
     justify-content: space-evenly;
 `
 const Indiv = styled.div`
@@ -72,25 +58,27 @@ font-size: 1.2vw;
 const Background=styled.div`
     width: 100vw;
     position: absolute;
-    height: 15vw;
-    margin-top: -3vw;
+    height: 40vw;
+    margin-top: 0vw;
     overflow: hidden;
-    background-size: cover;
-    background-position: right;
-    border-top: solid #002a7d .4vw;
-    border-bottom: solid #ffa5008c .4vw;
-    -webkit-filter: blur(1px);
-    -webkit-filter: blur(1px);
-    -webkit-filter: blur(1px);
+    background: white;
+    border-top: solid #0b0c0e3d .4vw;
+    border-bottom: solid #ffa5003d .4vw;
     filter: blur(1px);
+`
+const Title = styled.h1`
+    position: absolute;
+    margin-top: 4vw;
+    color: #11679b;
+    font-size: 5vw;
 `
 class People extends Component{
 
     render() {
         return (
             <Wrapper>
-                <Background><img src='https://static1.squarespace.com/static/582dc9ea6a4963e5091cd8cd/t/5c0c26c8758d46a39cc09ad4/1544300256727/?format=2500w'/>
-                </Background>
+                <Background />
+                <Title>WHO WE HELP</Title>
             <Pic0>
                 <Indiv>
                     <Img src={require('../../picture0.jpg')} alt="HEY! WHERE'S THE PICC???"/>
