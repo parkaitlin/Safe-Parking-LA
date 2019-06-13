@@ -59,6 +59,8 @@ export const ResourcesContainer = styled.div`
         height: 48px;
         background-color: #13678b;
         color: #FFF;
+        font-size: 16px;
+        margin: 5px;
       }
       h6 {
         display: flex;
@@ -66,6 +68,8 @@ export const ResourcesContainer = styled.div`
         align-items: center;
         svg {
           color: #13678b;
+          font-size: 2.4vw;
+          margin-left: 1vw;
         }
       }
     }
@@ -132,5 +136,9 @@ export const ResourcesContainer = styled.div`
       > div:nth-of-type(4) {
       }
     }
+  }
+  .city-name {
+    color: #13678b;
+    font-weight: 600;
   }
 `
