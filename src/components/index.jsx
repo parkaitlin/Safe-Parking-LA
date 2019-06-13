@@ -19,13 +19,13 @@ class App extends Component {
   render() {
     return (
       <div style={{fontFamily:'Raleway'}}>
-        {/* <Navbar /> */}
+        <Navbar />
         <Switch>
           <Route exact path={routes.HOME} render={()=> <Home/>} />
           <Route exact path={routes.RESOURCE} render={()=> <Resources/>} />
           <Route exact path={routes.APPLYFORPARKING} render={() => <ApplyForParking />} />
         </Switch>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     )
 
