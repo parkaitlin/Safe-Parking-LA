@@ -245,7 +245,9 @@ class Resources extends Component {
           {/* 4 */} {/* Dropdown */}
           <div>
             <select className="city-input" name='city' placeholder='Select a City Los Angeles' value={city} onChange={this.handleChange}>
-              <option>- - -</option>
+              <option>
+                Select Region ↓
+              </option>
               <SpaOne />
               <SpaTwo />
               <SpaThree />
