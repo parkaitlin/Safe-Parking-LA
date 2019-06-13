@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { ResourcesContainer } from './styled'
+import { Title } from '../ApplyForParking/styledTitle'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPlusCircle, faTimes} from '@fortawesome/free-solid-svg-icons'
@@ -234,237 +235,242 @@ class Resources extends Component {
   render() {
     const { secondCity, city, cityTwo, grocery, meal, shower, laundry, transportation, storage, mentalHealth, accessPoint, subAbuse } = this.state
     return (
-      <ResourcesContainer>
-        <main>
+      <>
+        <Title>
+          <h1>Resources</h1>
+        </Title>
+        <ResourcesContainer>
+          <main>
 
-          {/* 1 */}
-          <div>
-            <h1>
-              Additional Resources
-            </h1>
-            <p>
-              During your transition, our sister agencies offer an array of services to help you on your way.
-              <br />
-              Please search below by region and amenities to find a local organization that is available to help.
-            </p>
-          </div>
-          
-          {/* 2 */}
-          <div>
-            <h1>
-              Green Streets
-            </h1>
-            <p>
-              On January 7, 2017 Los Angeles Municipal Code (LAMC) 85.03 was enacted by the Los Angeles City Council. The ordinance maps streets where individuals living in their vehicles can park overnight (9 PM - 6 AM). These streets are marked on the map as "Green Streets". This ordinance will expire July 1, 2018, unless extended by the Los Angeles City Council.
-              <br />
-              <br />
-              More "Green Streets" information and all 21 area maps can be found here.
-            </p>
-          </div>
-
-          {/* 3 */}
-          <div>
-            <h1>
-              Search Resources
-            </h1>
-            <p>Steps to Search:
-              <br />
-              1. Select Region from dropdown menu
-              <br />
-              2. Select need such as food, shower, transportation, etc.
-            </p>
-          </div>
-
-          {/* 4 */} {/* Dropdown */}
-          <div>
-            <select className="city-input" name='city' placeholder='Select a City Los Angeles' value={city} onChange={this.handleChange}>
-              <option>
-                Select Region 
-              </option>
-              <SpaOne />
-              <SpaTwo />
-              <SpaThree />
-              <SpaFour />
-              <SpaFive />
-              <SpaSix />
-              <SpaSeven />
-              <SpaEight />
-            </select>
-            {
-              secondCity
-            ? <> 
-            <select className="city-input" name='cityTwo' placeholder='Select a City Los Angeles' value={cityTwo} onChange={this.handleChange}>
-              <option>
-                Select Region
-              </option>
-              <SpaOne />
-              <SpaTwo />
-              <SpaThree />
-              <SpaFour />
-              <SpaFive />
-              <SpaSix />
-              <SpaSeven />
-              <SpaEight />
-            </select>
-            <FontAwesomeIcon icon={faTimes} onClick={this.subCity}/>
-              </>
-              /* this is the icon */
-            : <h6><FontAwesomeIcon icon={faPlusCircle} onClick={this.addCity}/></h6>
-            }
-          </div>
-
-          <h2>What I need ...</h2>
-
-          {/* 5 */} {/* Label Checkboxes */}
-          <div>
+            {/* 1 */}
             <div>
-              <input type="checkbox" name="meal" onClick={this.handleCheck} />
-              <label>
-                Meals
-              </label>
-              <br />
-            </div>
-
-            <div>
-              <input type="checkbox" name="grocery" onChange={this.handleCheck} />
-              <label>
-                Groceries
-              </label>
-            </div>
-
-            <div>
-              <input type="checkbox" name="shower" onChange={this.handleCheck} />
-              <label>
-                Showers
-              </label>
+              <h1>
+                Additional Resources
+              </h1>
+              <p>
+                During your transition, our sister agencies offer an array of services to help you on your way.
+                <br />
+                Please search below by region and amenities to find a local organization that is available to help.
+              </p>
             </div>
             
+            {/* 2 */}
             <div>
-              <input type="checkbox" name="laundry" onChange={this.handleCheck} />
-              <label>
-                Laundry
-              </label>
+              <h1>
+                Green Streets
+              </h1>
+              <p>
+                On January 7, 2017 Los Angeles Municipal Code (LAMC) 85.03 was enacted by the Los Angeles City Council. The ordinance maps streets where individuals living in their vehicles can park overnight (9 PM - 6 AM). These streets are marked on the map as "Green Streets". This ordinance will expire July 1, 2018, unless extended by the Los Angeles City Council.
+                <br />
+                <br />
+                More "Green Streets" information and all 21 area maps can be found here.
+              </p>
             </div>
 
-
+            {/* 3 */}
             <div>
-              <input type="checkbox" name="transportation" onChange={this.handleCheck} />
-              <label>
-                Transportation
-              </label>
-            </div>
-            
-            <div>
-              <input type="checkbox" name="storage" onChange={this.handleCheck} />
-              <label>
-                Storage
-              </label>
+              <h1>
+                Search Resources
+              </h1>
+              <p>Steps to Search:
+                <br />
+                1. Select Region from dropdown menu
+                <br />
+                2. Select need such as food, shower, transportation, etc.
+              </p>
             </div>
 
+            {/* 4 */} {/* Dropdown */}
             <div>
-              <input type="checkbox" name="accessPoint" onChange={this.handleCheck} />
-              <label>
-                Access Point Centers
-              </label>
+              <select className="city-input" name='city' placeholder='Select a City Los Angeles' value={city} onChange={this.handleChange}>
+                <option>
+                  Select Region 
+                </option>
+                <SpaOne />
+                <SpaTwo />
+                <SpaThree />
+                <SpaFour />
+                <SpaFive />
+                <SpaSix />
+                <SpaSeven />
+                <SpaEight />
+              </select>
+              {
+                secondCity
+              ? <> 
+              <select className="city-input" name='cityTwo' placeholder='Select a City Los Angeles' value={cityTwo} onChange={this.handleChange}>
+                <option>
+                  Select Region
+                </option>
+                <SpaOne />
+                <SpaTwo />
+                <SpaThree />
+                <SpaFour />
+                <SpaFive />
+                <SpaSix />
+                <SpaSeven />
+                <SpaEight />
+              </select>
+              <FontAwesomeIcon icon={faTimes} onClick={this.subCity}/>
+                </>
+                /* this is the icon */
+              : <h6><FontAwesomeIcon icon={faPlusCircle} onClick={this.addCity}/></h6>
+              }
             </div>
 
+            <h2>What I need ...</h2>
+
+            {/* 5 */} {/* Label Checkboxes */}
             <div>
-              <input type="checkbox" name="mentalHealth" onChange={this.handleCheck} />
-              <label>
-                Mental Health Centers
-              </label>
+              <div>
+                <input type="checkbox" name="meal" onClick={this.handleCheck} />
+                <label>
+                  Meals
+                </label>
+                <br />
+              </div>
+
+              <div>
+                <input type="checkbox" name="grocery" onChange={this.handleCheck} />
+                <label>
+                  Groceries
+                </label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="shower" onChange={this.handleCheck} />
+                <label>
+                  Showers
+                </label>
+              </div>
+              
+              <div>
+                <input type="checkbox" name="laundry" onChange={this.handleCheck} />
+                <label>
+                  Laundry
+                </label>
+              </div>
+
+
+              <div>
+                <input type="checkbox" name="transportation" onChange={this.handleCheck} />
+                <label>
+                  Transportation
+                </label>
+              </div>
+              
+              <div>
+                <input type="checkbox" name="storage" onChange={this.handleCheck} />
+                <label>
+                  Storage
+                </label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="accessPoint" onChange={this.handleCheck} />
+                <label>
+                  Access Point Centers
+                </label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="mentalHealth" onChange={this.handleCheck} />
+                <label>
+                  Mental Health Centers
+                </label>
+              </div>
+
+
+              <div>
+                <input type="checkbox" name="subAbuse" onChange={this.handleCheck} />
+                <label>
+                  Substance Abuse Centers
+                </label>
+              </div>
+
+              <div>
+                <input type="checkbox" onChange={this.handleAll} />
+                <label>
+                  Select All
+                </label>
+              </div>
             </div>
 
+            <section>
+              <button onClick={this.getResources}>
+                Search
+              </button>
+            </section>
 
+            {/* 6 */} {/* Search Queries */}
             <div>
-              <input type="checkbox" name="subAbuse" onChange={this.handleCheck} />
-              <label>
-                Substance Abuse Centers
-              </label>
+              {
+                grocery &&
+                <div>
+                  <h1>Groceries</h1>
+                  <GroceryList list={this.state.groceries} listTwo={this.state.groceries2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
+                </div>
+              }
+              {
+                meal &&
+                <div>
+                  <h4>Meals</h4>
+                  <MealList list={this.state.meals} />
+                </div>
+              }
+              {
+                shower &&
+                <div>
+                  <h4>Showers</h4>
+                  <ShowerList list={this.state.showers} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
+                </div>
+              }
+              {
+                laundry &&
+                <div>
+                  <h4>Laundry</h4>
+                  <LaundryList list={this.state.laundryOptions} />
+                </div>
+              }
+              {
+                transportation &&
+                <div>
+                  <h4>Transportation</h4>
+                  <TransportList list={this.state.transportOptions} />
+                </div>
+              }
+              {
+                storage &&
+                <div>
+                  <h4>Storage</h4>
+                  <StorageList list={this.state.storageOptions} />
+                </div>
+              }
+              {
+                mentalHealth &&
+                <div>
+                  <h4>Mental Health Centers</h4>
+                  <MentalHealthList list={this.state.mentalHealthCenters} />
+                </div>
+              }
+              {
+                accessPoint &&
+                <div>
+                  <h4>Access Point Centers</h4>
+                  <AccessList list={this.state.accessPoints} />
+                </div>
+              }
+              {
+                subAbuse &&
+                <div>
+                  <h4>Substance Abuse Centers</h4>
+                  <SubAbuseList list={this.state.subAbuseCenters} />
+                </div>
+              }
             </div>
-
-            <div>
-              <input type="checkbox" onChange={this.handleAll} />
-              <label>
-                Select All
-              </label>
-            </div>
-          </div>
-
-          <section>
-            <button onClick={this.getResources}>
-              Search
-            </button>
-          </section>
-
-          {/* 6 */} {/* Search Queries */}
-          <div>
-            {
-              grocery &&
-              <div>
-                <h1>Groceries</h1>
-                <GroceryList list={this.state.groceries} listTwo={this.state.groceries2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
-              </div>
-            }
-            {
-              meal &&
-              <div>
-                <h4>Meals</h4>
-                <MealList list={this.state.meals} />
-              </div>
-            }
-            {
-              shower &&
-              <div>
-                <h4>Showers</h4>
-                <ShowerList list={this.state.showers} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
-              </div>
-            }
-            {
-              laundry &&
-              <div>
-                <h4>Laundry</h4>
-                <LaundryList list={this.state.laundryOptions} />
-              </div>
-            }
-            {
-              transportation &&
-              <div>
-                <h4>Transportation</h4>
-                <TransportList list={this.state.transportOptions} />
-              </div>
-            }
-            {
-              storage &&
-              <div>
-                <h4>Storage</h4>
-                <StorageList list={this.state.storageOptions} />
-              </div>
-            }
-            {
-              mentalHealth &&
-              <div>
-                <h4>Mental Health Centers</h4>
-                <MentalHealthList list={this.state.mentalHealthCenters} />
-              </div>
-            }
-            {
-              accessPoint &&
-              <div>
-                <h4>Access Point Centers</h4>
-                <AccessList list={this.state.accessPoints} />
-              </div>
-            }
-            {
-              subAbuse &&
-              <div>
-                <h4>Substance Abuse Centers</h4>
-                <SubAbuseList list={this.state.subAbuseCenters} />
-              </div>
-            }
-          </div>
-        </main>
-      </ResourcesContainer>
+          </main>
+        </ResourcesContainer>
+      </>
     )
   }
 }

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const MainContainer = styled.div`
   
-  height: 200vh;
+  height: 180vh;
   display: flex;
   justify-content: center;
 
@@ -94,7 +94,7 @@ export const MainContainer = styled.div`
   }
   @media(max-width: 650px) {
    display: block;
-   height: 220vh;
+   height: 200vh;
    > div {
       width: 100%;
       > h1:nth-of-type(1) {

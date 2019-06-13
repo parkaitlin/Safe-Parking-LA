@@ -12,12 +12,6 @@ const ApplyForParking = () => {
       </Title>
       <MainContainer>
         <div>
-
-          {/* <h1>
-            Overnight Parking FAQ
-          </h1>
-          <br /> */}
-
           <aside>
 
             <h1>
