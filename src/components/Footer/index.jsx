@@ -47,9 +47,21 @@ const Para =styled.p`
     font-size: 1vw;
     margin-top: 1vw;
 `
+const Para2 =styled.p`
+    font-size: 1vw;
+    margin-top: 1vw;
+    text-align: left;
+    margin-left: 17vw;
+`
 const Num=styled.span`
     font-weight: 900;
     color: yellow;
+`
+const Link=styled.a`
+    text-decoration: none;
+    font-weight: 900;
+    color: #f7ff00;
+    text-align: unset;
 `
 
 class Footer extends Component{
@@ -71,7 +83,10 @@ class Footer extends Component{
                     </div>
                 </Social>
                 <Contact><Title>EXTERNAL LINKS</Title>
-                    <Para></Para>
+                    <Para2><Link href='https://www.samhsa.gov/homelessness-programs-resources'>SAMHSA.gov</Link></Para2>
+                    <Para2><Link href='https://www.lahsa.org/get-help'>LAHSA.org</Link></Para2>
+                    <Para2><Link href='https://www.socialserve.com/la_county/Resources.html?ch=LAC'>SocialServe.com</Link></Para2>
+                    <Para2><Link href='https://www.hhs.gov/programs/social-services/homelessness/resources/index.html#ResourcesforPersonsExperiencingHomelessness'>HHS.gov</Link></Para2>
                 </Contact>
         </Wrapper>)
     }
