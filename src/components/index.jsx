@@ -19,7 +19,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <div style={{fontFamily:'Raleway'}}>
         <Navbar />
         <Switch>
           <Route exact path={routes.HOME} render={()=> <Home/>} />

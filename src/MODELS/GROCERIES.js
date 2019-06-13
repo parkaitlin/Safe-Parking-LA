@@ -429,7 +429,6 @@ export const groceries = [
     EMAIL: "N/A",
     PHONE: "(310) 835-4114",
     HOURS_OF_OPERATION: "4th Sat 9-11:30a",
-    HOURS_OF_OPERATION: "4th Sat 9-11:30a",
     WALK_INS: "N/A",
     ELIGIBILITY_REQUIREMENTS: "N/A",
     NOTES: "N/A"

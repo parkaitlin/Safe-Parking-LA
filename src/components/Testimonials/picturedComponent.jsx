@@ -46,6 +46,7 @@ const Wrapper = styled.div`
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    margin-top: -4vw;
     width: 100vw;
     height: 17vw;
     -webkit-box-pack: space-evenly;
@@ -70,11 +71,13 @@ const Background = styled.div`
     background-image: url(/static/media/background1.43d255c5.jpg);
     width: 100vw;
     position: absolute;
-    height: 13vw;
+    height: 15vw;
+    margin-top: -3vw;
     background-size: cover;
     background-position: right;
     border-top: solid #ffffff8c 1vw;
     border-bottom: solid #ffffff8c 1vw;
+    -webkit-filter: blur(1px);
     -webkit-filter: blur(1px);
     filter: blur(1px);
 `
