@@ -22,7 +22,7 @@ const Para=styled.p`
     height: 10vw;
     font-size: 1.5vw;
     color: white;
-    text-shadow: 0 0 0.1vw white;
+    text-shadow: 0 0 4.1vw white;
     margin-top: 3vw;
 `
 const Para2=styled.p`
@@ -31,7 +31,7 @@ const Para2=styled.p`
     height: 10vw;
     font-size: 1.5vw;
     color: white;
-    text-shadow: 0 0 0.1vw white;
+    text-shadow: 0 0 4.1vw white;
     margin-top: -5vw;
 `
 const Title=styled.h1`
@@ -164,8 +164,12 @@ class Home extends Component{
                 <TopDesc>Safe Parking LA provides a safe and legal intervention for people experiencing homelessness who are living in their vehicles.</TopDesc>
                 <SecDesc>In Los Angeles County, there are over 15,700 people living in their vehicles each night. Individuals living in their cars represent over 25% of the population of people experiencing homelessness in LA County. We are here to help.</SecDesc>
             <Wrapper>
-                <UpperButton>APPLY TO PARK</UpperButton>
-                <UpperButton>ADDITIONAL RESOURCES</UpperButton>
+                    <form action="/apply"> 
+                        <UpperButton>APPLY FOR PARKING</UpperButton>
+                    </form>
+                    <form action="/resources">
+                        <UpperButton>ADDITIONAL RESOURCES</UpperButton>
+                    </form>
                 <Banner/>
             </Wrapper>
             <Testimonials/>
@@ -180,8 +184,12 @@ class Home extends Component{
                     <Banner2/>
                     </div>
                     <ButtnHolder>
-                        <LowerButton>APPLY FOR PARKING</LowerButton>
-                        <LowerButton>ADDITIONAL RESOURCES</LowerButton>
+                        <form action="/apply"> 
+                            <LowerButton>APPLY FOR PARKING</LowerButton>
+                        </form>
+                        <form action="/resources">
+                            <LowerButton>ADDITIONAL RESOURCES</LowerButton>
+                        </form>
                     </ButtnHolder>
                 </Info>
                 </div>
