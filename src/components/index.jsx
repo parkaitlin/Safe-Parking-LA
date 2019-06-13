@@ -7,7 +7,6 @@ import Resources from '../components/Resources'
 import Navbar from './Navbar'
 
 /* Things Vianney is working on. Do not touch. */
-import Regions from '../components/TEST/regions'
 import ApplyForParking from '../components/ApplyForParking'
 
 import Footer from './Footer'
