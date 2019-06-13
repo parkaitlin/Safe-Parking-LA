@@ -79,7 +79,6 @@ export const MainContainer = styled.div`
           width: 250px;
           height: 50px;
           border-radius: 4px;
-          border: 2px solid grey;
           font-size: 1.2em;
           background-color: #13679b;
           color: white;
