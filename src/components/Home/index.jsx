@@ -92,12 +92,15 @@ const TopDesc=styled.h3`
 `
 const Toggi=styled.div`
     position: absolute;
-    width: 21vw;
-    height: 4vw;
+    width: 14vw;
+    text-align: center;
+    height: 3vw;
     background: #0000ff96;
     left: 26vw;
     top: 23vw;
     border-radius: 1vw;
+    color: white;
+    font-size: 2vw;
     }
 .on{
     display: relative;
@@ -174,7 +177,8 @@ class Home extends Component{
                         <LowerButton>Additional Resources</LowerButton>
                     </ButtnHolder>
                 </Info>
-        </div>)
+            </div>
+        )
     }
 }
 export default Home
