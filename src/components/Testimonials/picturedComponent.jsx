@@ -69,7 +69,7 @@ font-size: 1.2vw;
     color: #000000;
     text-shadow: 0 0 12vw white;
 `
-const Background = styled.div`
+const Background=styled.div`
     width: 100vw;
     position: absolute;
     height: 15vw;
@@ -89,27 +89,8 @@ class People extends Component{
     render() {
         return (
             <Wrapper>
-                <Background>
-                <ParallaxBanner
-                    layers={[
-                        {
-                            image: 'https://static1.squarespace.com/static/582dc9ea6a4963e5091cd8cd/t/5c0c26c8758d46a39cc09ad4/1544300256727/?format=2500w',
-                            amount: 0.4,
-                        },
-                    ]}
-                    style={{
-                    height: '5000px',
-                    position: 'absolute',
-                    overflow: 'none',
-                    width: '100vw',
-                    height: '39vw',
-                    zIndex: '-4',
-                    marginTop: '-10vw',
-                    marginBottom: '8vw'
-                    }}
-                    ></ParallaxBanner>
-                    </Background>
-        {/* <Background style={{backgroundImage: `url(${background})`}}/> */}
+                <Background><img src='https://static1.squarespace.com/static/582dc9ea6a4963e5091cd8cd/t/5c0c26c8758d46a39cc09ad4/1544300256727/?format=2500w'/>
+                </Background>
             <Pic0>
                 <Indiv>
                     <Img src={require('../../picture0.jpg')} alt="HEY! WHERE'S THE PICC???"/>
