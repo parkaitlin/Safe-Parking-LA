@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { ResourcesContainer } from './styled'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faPlusCircle, faTimes} from '@fortawesome/free-solid-svg-icons'
+
 //regions
 import SpaOne from './spa/spaOne'
 import SpaTwo from './spa/spaTwo'
@@ -36,6 +39,7 @@ import AccessList from './resourceList/access'
 
 class Resources extends Component {
   state = {
+    secondCity: false,
     grocery: false,
     meal: false,
     shower: false,
@@ -46,6 +50,7 @@ class Resources extends Component {
     accessPoint: false,
     subAbuse: false,
     city: '',
+    cityTwo: '',
     groceries: [],
     meals: [],
     showers: [],
@@ -54,7 +59,16 @@ class Resources extends Component {
     storageOptions: [],
     mentalHealthCenters: [],
     accessPoints: [],
-    subAbuseCenters: []
+    subAbuseCenters: [],
+    groceries2: [],
+    meals2: [],
+    showers2: [],
+    laundryOptions2: [],
+    transportOptions2: [],
+    storageOptions2: [],
+    mentalHealthCenters2: [],
+    accessPoints2: [],
+    subAbuseCenters2: []
   }
   handleAll = () => {
     if (!this.state.grocery) {
@@ -99,28 +113,48 @@ class Resources extends Component {
       })
     }
   }
+  addCity = () => {
+    this.setState({
+      secondCity: true
+    })
+  }
+  subCity = () => {
+    this.setState({
+      secondCity: false
+    })
+  }
   getResources = () => {
-    const { grocery, meal, shower, laundry, transportation, storage, mentalHealth, accessPoint, subAbuse, city } = this.state
+    const { secondCity, grocery, meal, shower, laundry, transportation, storage, mentalHealth, accessPoint, subAbuse, city, cityTwo } = this.state
     if (grocery) {
       const array = []
+      const arrayTwo = []
       for (let i = 0; i < groceryResource.length; i++) {
         if (groceryResource[i].NEIGHBORHOOD === city) {
           array.push(groceryResource[i])
         }
+        if (secondCity && groceryResource[i].NEIGHBORHOOD === cityTwo){
+          arrayTwo.push(groceryResource[i])
+        }
       }
       this.setState({
-        groceries: array
+        groceries: array,
+        groceries2: arrayTwo
       })
     }
     if (meal) {
       const array = []
+      const arrayTwo = []
       for (let i = 0; i < mealResource.length; i++) {
         if (mealResource[i].NEIGHBORHOOD === city) {
           array.push(mealResource[i])
         }
+        if (secondCity && mealResource[i].NEIGHBORHOOD === cityTwo){
+          arrayTwo.push(mealResource[i])
+        }
       }
       this.setState({
-        meals: array
+        meals: array,
+        meals2: arrayTwo
       })
     }
     if (shower) {
@@ -198,7 +232,7 @@ class Resources extends Component {
     }
   }
   render() {
-    const { city, grocery, meal, shower, laundry, transportation, storage, mentalHealth, accessPoint, subAbuse } = this.state
+    const { secondCity, city, cityTwo, grocery, meal, shower, laundry, transportation, storage, mentalHealth, accessPoint, subAbuse } = this.state
     return (
       <ResourcesContainer>
         <main>
@@ -211,7 +245,7 @@ class Resources extends Component {
             <p>
               During your transition, our sister agencies offer an array of services to help you on your way.
               <br />
-              Please search below by region and amenities to find a local organizatinon that is available to help.
+              Please search below by region and amenities to find a local organization that is available to help.
             </p>
           </div>
           
@@ -245,7 +279,7 @@ class Resources extends Component {
           <div>
             <select className="city-input" name='city' placeholder='Select a City Los Angeles' value={city} onChange={this.handleChange}>
               <option>
-                Select Region ↓
+                Select Region 
               </option>
               <SpaOne />
               <SpaTwo />
@@ -256,9 +290,12 @@ class Resources extends Component {
               <SpaSeven />
               <SpaEight />
             </select>
-            <select className="city-input" name='cityTwo' placeholder='Select a City Los Angeles' value={city} onChange={this.handleChange}>
+            {
+              secondCity
+            ? <> 
+            <select className="city-input" name='cityTwo' placeholder='Select a City Los Angeles' value={cityTwo} onChange={this.handleChange}>
               <option>
-                Select Region ↓
+                Select Region
               </option>
               <SpaOne />
               <SpaTwo />
@@ -269,6 +306,11 @@ class Resources extends Component {
               <SpaSeven />
               <SpaEight />
             </select>
+            <FontAwesomeIcon icon={faTimes} onClick={this.subCity}/>
+              </>
+              /* this is the icon */
+            : <h6><FontAwesomeIcon icon={faPlusCircle} onClick={this.addCity}/></h6>
+            }
           </div>
 
           <h2>What I need ...</h2>
@@ -360,8 +402,8 @@ class Resources extends Component {
             {
               grocery &&
               <div>
-                <h4>Groceries</h4>
-                <GroceryList list={this.state.groceries} />
+                <h1>Groceries</h1>
+                <GroceryList list={this.state.groceries} listTwo={this.state.groceries2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
             }
             {
@@ -375,7 +417,7 @@ class Resources extends Component {
               shower &&
               <div>
                 <h4>Showers</h4>
-                <ShowerList list={this.state.showers} />
+                <ShowerList list={this.state.showers} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
             }
             {

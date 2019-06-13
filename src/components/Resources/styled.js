@@ -60,6 +60,14 @@ export const ResourcesContainer = styled.div`
         background-color: #13678b;
         color: #FFF;
       }
+      h6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          color: #13678b;
+        }
+      }
     }
     h2 {
       text-align: center;
