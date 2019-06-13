@@ -13,7 +13,7 @@ export const transportation = [
       PROGRAM_NAME: "N/A",
       SERVICE_PLANNING_AREA: "SPA 5 - West LA",
       OPERATOR: "Big Blue Bus",
-      NEIGHBORHOOD: "N/A",
+      NEIGHBORHOOD: "West LA",
       ADDRESS: "N/A",
       WEBSITE: "https://www.bigbluebus.com/",
       PHONE: "(310) 451-5411",

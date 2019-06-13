@@ -328,7 +328,7 @@ export const accessCenters = [
       PROGRAM_NAME: "HOPE Center",
       SERVICE_PLANNING_AREA: "SPA 3 - San Gabriel Valley",
       OPERATOR: "Pacific Clinics HOPE Center",
-      NEIGHBORHOOD: "Irindale",
+      NEIGHBORHOOD: "Irwindale",
       ADDRESS: "13001 Ramona Blvd Suite I. Irwindale, CA 91706",
       WEBSITE: "N/A",
       EMAIL: "N/A",
