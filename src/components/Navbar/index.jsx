@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import * as routes from '../constants/routes'
 import styled from 'styled-components'
 import call from '../../call.png'
+import { anyTypeAnnotation } from '@babel/types';
 
 const Wrapper = styled.div`
     width: 100vw;
@@ -24,12 +25,15 @@ const Wrapper = styled.div`
     text-decoration: none;
     .phone {
         > div {
-            color: red;
+            color: white;
             background-color: black;
             height: 50px;
             position: absolute;
-            left: 77%;
-            width: 180px;
+            left: 74%;
+            font-size: 2em;
+            width: 220px;
+            font-weight: 900;
+            border-radius: 4px;
         }
     }
 `
@@ -69,29 +73,31 @@ const Ring = styled.img`
     filter: sepia(100%) contrast(100%) saturate(10000%) hue-rotate(-50deg) brightness(.86);
 `
 
-class NavBar extends Component {
-    state = {
-
-        render() {
-            return (
-                <Wrapper>
-                    <LogoWrap href='/'><Logo /></LogoWrap>
-                    <Link href='https://www.safeparkingla.org/about'>About</Link>
-                    <Link href={routes.APPLYFORPARKING}>Apply to Park</Link>
-                    <Link href={routes.RESOURCE}>Resources</Link>
-                    <Link href='https://www.safeparkingla.org/contact'>Contact</Link>
-                    <Call
-                        className="phone"
-                        onClick={console.log(`hi`)}>
-                        <Ring src={call} />
-                        <div style={{
-                            display: 'none'
-                        }}>
-                            RINGRINGRING
-                    </div>
-                    </Call>
-                </Wrapper>)
-        }
+const NavBar = () => {
+    const [display, setDisplay] = useState('none')
+    const showModal = () => {
+        setDisplay('block')
     }
+    const hideModal = () => {
+        setDisplay('none')
+    }
+    return (
+        <Wrapper>
+            <LogoWrap href='/'><Logo /></LogoWrap>
+            <Link href='https://www.safeparkingla.org/about'>About</Link>
+            <Link href={routes.APPLYFORPARKING}>Apply to Park</Link>
+            <Link href={routes.RESOURCE}>Resources</Link>
+            <Link href='https://www.safeparkingla.org/contact'>Contact</Link>
+            <Call
+                className="phone"
+                onMouseEnter={showModal}
+                onMouseLeave={hideModal}
+                >
+                <Ring src={call} />
+                <div style={{ display }}>
+                    (213) 793 - 8493
+                </div>
+            </Call>
+        </Wrapper>)
 }
-    export default NavBar
+export default NavBar
