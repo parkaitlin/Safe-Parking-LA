@@ -73,14 +73,11 @@ class NavBar extends Component {
     state = {
 
         render() {
-            const getHome = () => {
-                this.props.history.push('/')
-            }
             return (
                 <Wrapper>
                     <LogoWrap href='/'><Logo /></LogoWrap>
                     <Link href='https://www.safeparkingla.org/about'>About</Link>
-                    <Link href='/apply'>Apply to Park</Link>
+                    <Link href={routes.APPLYFORPARKING}>Apply to Park</Link>
                     <Link href={routes.RESOURCE}>Resources</Link>
                     <Link href='https://www.safeparkingla.org/contact'>Contact</Link>
                     <Call
