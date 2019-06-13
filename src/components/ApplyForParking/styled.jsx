@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const MainContainer = styled.div`
   
-  height: 170vh;
+  height: 200vh;
   display: flex;
   justify-content: center;
 
@@ -14,10 +14,12 @@ export const MainContainer = styled.div`
         text-align: center;
         font-size: 3em;
         padding-top: 1em;
+        font-family: Nunito;
       }
       > h1:nth-of-type(2) {
         padding-top: 3em;
         text-align: center;
+        font-family: Nunito;
       }
       aside {
         display: flex;
@@ -26,25 +28,31 @@ export const MainContainer = styled.div`
           padding-top: 3em;
           text-align: center;
           font-size: 2em;
+          font-family: Nunito;
         }
         ul {
           li {
             text-align: left;
-            /* list-style: inside; */
             font-size: 1.5em;
             list-style: none;
             position: relative;
-            left: 12em;
+            left: 10em;
+            font-family: Nunito;
+
           }
         }
       }
     ol {
       li {
-        margin-bottom: 1em;
+        margin-bottom: 3em;
         text-align: center;
         font-size: 1.5em;
         list-style-position: inside;
+        font-family: Nunito;
       }
+    }
+    h1:nth-of-type(2) {
+      margin-bottom: 1.2em;
     }
     section {
       display: flex;
@@ -72,7 +80,7 @@ export const MainContainer = styled.div`
           border-radius: 4px;
           border: 2px solid grey;
           font-size: 1.2em;
-          background-color: dodgerblue;
+          background-color: #13679b;
           color: white;
         }
         p {
@@ -83,7 +91,7 @@ export const MainContainer = styled.div`
       }
     }
   }
-  @media(max-width: 1000px) {
+  @media(max-width: 650px) {
    display: block;
    height: 220vh;
    > div {
