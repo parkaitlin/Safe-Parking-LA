@@ -65,8 +65,6 @@ class Resources extends Component {
     meals2: [],
     showers2: [],
     laundryOptions2: [],
-    transportOptions2: [],
-    storageOptions2: [],
     mentalHealthCenters2: [],
     accessPoints2: [],
     subAbuseCenters2: []
@@ -196,7 +194,7 @@ class Resources extends Component {
         array.push(transportResource[i])
       }
       this.setState({
-        transportOptions: array
+        transportOptions: array,
       })
     }
     if (storage) {
@@ -210,35 +208,50 @@ class Resources extends Component {
     }
     if (mentalHealth) {
       const array = []
+      const arrayTwo = []
       for (let i = 0; i < mentalHealthResource.length; i++) {
         if (mentalHealthResource[i].NEIGHBORHOOD === city) {
           array.push(mentalHealthResource[i])
         }
+        if (mentalHealthResource[i].NEIGHBORHOOD === cityTwo) {
+          arrayTwo.push(mentalHealthResource[i])
+        }
       }
       this.setState({
-        mentalHealthCenters: array
+        mentalHealthCenters: array,
+        mentalHealthCenters2: arrayTwo
       })
     }
     if (accessPoint) {
       const array = []
+      const arrayTwo = []
       for (let i = 0; i < accessPointResource.length; i++) {
         if (accessPointResource[i].NEIGHBORHOOD === city) {
           array.push(accessPointResource[i])
         }
+        if (accessPointResource[i].NEIGHBORHOOD === cityTwo) {
+          arrayTwo.push(accessPointResource[i])
+        }
       }
       this.setState({
-        accessPoints: array
+        accessPoints: array,
+        accessPoints2: arrayTwo
       })
     }
     if (subAbuse) {
       const array = []
+      const arrayTwo = []
       for (let i = 0; i < subAbuseResource.length; i++) {
         if (subAbuseResource[i].NEIGHBORHOOD === city) {
           array.push(subAbuseResource[i])
         }
+        if (subAbuseResource[i].NEIGHBORHOOD === cityTwo) {
+          arrayTwo.push(subAbuseResource[i])
+        }
       }
       this.setState({
-        subAbuseCenters: array
+        subAbuseCenters: array,
+        subAbuseCenters2: arrayTwo
       })
     }
   }
@@ -348,18 +361,18 @@ class Resources extends Component {
               </div>
 
               <div>
-                <h4>Meals</h4>
+                <h1>Meals</h1>
                 <MealList list={this.state.meals} listTwo={this.state.meals2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
               
               <div>
-                <h4>Showers</h4>
+                <h1>Showers</h1>
                 <ShowerList list={this.state.showers} listTwo={this.state.showers2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
 
 
               <div>
-                <h4>Laundry</h4>
+                <h1>Laundry</h1>
                 <LaundryList list={this.state.laundryOptions} listTwo={this.state.laundryOptions2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
               </div>
               

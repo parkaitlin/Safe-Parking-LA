@@ -1,9 +1,11 @@
 import React from 'react'
+import {ResourceCards} from './styled'
+
 
 const LaundryList = (props)=>{
   const resource = props.list.map((info, i)=>{
     return(
-      <div key={i}>
+      <ResourceCards key={i}>
         <h3>{info.OPERATOR}</h3>
         <p>Phone#: {info.PHONE}</p>
         <p>Hours: {info.HOURS_OF_OPERATION}</p>
@@ -11,12 +13,12 @@ const LaundryList = (props)=>{
         <p>Walk-in: {info.WALK_INS}</p>
         {info.WEBSITE !== "N/A" && <a href={info.WEBSITE}>Website</a>}
         <p>{info.ADDRESS}</p>
-      </div>
+      </ResourceCards>
     )
   })
   const resourceTwo = props.listTwo.map((info, i)=>{
     return(
-      <div key={i}>
+      <ResourceCards key={i}>
         <h4>{info.OPERATOR}</h4>
         <p>Phone#: {info.PHONE}</p>
         <p>Hours: {info.HOURS_OF_OPERATION}</p>
@@ -24,16 +26,16 @@ const LaundryList = (props)=>{
         <p>Walk-in: {info.WALK_INS}</p>
         {info.WEBSITE !== "N/A" && <a href={info.WEBSITE}>Website</a>}
         <p>{info.ADDRESS}</p>
-      </div>
+      </ResourceCards>
     )
   })
   return(
     <>
-    <h3>{props.city}</h3>
+    <h3 className='city-name'>{props.city}</h3>
     {resource}
     {
       props.secondCity
-      && <><h3>{props.cityTwo}</h3>
+      && <><h3 className='city-name'>{props.cityTwo}</h3>
       {resourceTwo}
       </>
     }
