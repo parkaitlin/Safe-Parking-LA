@@ -1,4 +1,4 @@
-const shower = [
+export const shower = [
     {
       PROGRAM_NAME: "Showers",
       SERVICE_PLANNING_AREA: "SPA 3 - San Gabriel Valley",
