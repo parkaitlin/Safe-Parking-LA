@@ -5,7 +5,7 @@ import call from '../../call.png'
 
 const Wrapper=styled.div`
     width: 100vw;
-    height: 6vw;
+    height: 5vw;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -18,7 +18,7 @@ const Wrapper=styled.div`
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: #134b80a3;
+    background: white;
     margin-top: 0vw;
     -webkit-text-decoration: none;
     text-decoration: none;
@@ -27,9 +27,9 @@ const Link=styled.a`
     padding-left: 1vw;
     text-decoration:none;
     font-size: 1vw;
-    color: white;
+    color: black;
     &:hover{
-        color: yellow;
+        color: blue;
         transition: .5s;
     }
 `
@@ -41,7 +41,6 @@ const Logo=styled.div`
     margin-left: -82vw;
     -webkit-text-decoration: none;
     text-decoration: none;
-    margin-top: 1vw;
     background-size: contain;
     background-image: url('https://static1.squarespace.com/static/582dc9ea6a4963e5091cd8cd/t/5c0f1cdb4ae2379685e87b3d/1544494308809/safeparkingla_logo.png?format=1500w')
 `
@@ -51,9 +50,8 @@ const Call=styled.div`
     text-decoration:none;
 `
 const Ring=styled.img`
-    width: 4.5vw;
-    margin-top: 2vw;
-    filter: sepia(100%) contrast(100%) saturate(10000%) hue-rotate(1deg);
+    width: 3.5vw;
+    filter: sepia(100%) contrast(100%) saturate(10000%) hue-rotate(-50deg) brightness(.86)
 `
 
 class NavBar extends Component{
@@ -61,11 +59,11 @@ class NavBar extends Component{
         return(
         <Wrapper>
                 <Logo/>
-                <Link href='home'>Home</Link>
-                <Link href='about'>About</Link>
-                <Link href='apply'>Apply</Link>
-                <Link href={routes.HOME}>Main Page</Link>
+                <Link href='https://www.safeparkingla.org/about'>About</Link>
+                <Link href='/apply'>Apply to Park</Link>
+                <Link href={routes.HOME}>Home</Link>
                 <Link href={routes.RESOURCE}>Resources</Link>
+                <Link href='https://www.safeparkingla.org/contact'>Contact</Link>
                 <Call><Ring src={call}/></Call>
         </Wrapper>)
     }
