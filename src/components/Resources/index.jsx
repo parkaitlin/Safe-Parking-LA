@@ -94,6 +94,3 @@ class Resources extends Component {
 }
 
 export default Resources;
-<p>
-  {/* { transportation[0].PROGRAM_NAME } */}
-</p>

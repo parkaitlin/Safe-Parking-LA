@@ -26,6 +26,7 @@ const Wrapper=styled.div`
 const Link=styled.a`
     padding-left: 1vw;
     text-decoration:none;
+    font-size: 1vw;
     color: white;
     &:hover{
         color: yellow;
@@ -61,9 +62,9 @@ class NavBar extends Component{
         <Wrapper>
                 <Logo/>
                 <Link href='home'>Home</Link>
-                <Link href='about'>About Safe Parking</Link>
+                <Link href='about'>About</Link>
                 <Link href='apply'>Apply</Link>
-                <Link href={routes.HOME}>OUR MAIN PAGE</Link>
+                <Link href={routes.HOME}>Main Page</Link>
                 <Link href={routes.RESOURCE}>Resources</Link>
                 <Call><Ring src={call}/></Call>
         </Wrapper>)

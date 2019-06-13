@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import styled from 'styled-components'
 import background from '../../background1.jpg'
+import {ParallaxBanner} from 'react-scroll-parallax'
 
 
 
@@ -48,7 +49,7 @@ const Wrapper = styled.div`
     display: inline-flex;
     margin-top: -4vw;
     width: 100vw;
-    height: 17vw;
+    height: 12vw;
     -webkit-box-pack: space-evenly;
     -webkit-justify-content: space-evenly;
     -ms-flex-pack: space-evenly;
@@ -60,23 +61,25 @@ const Indiv = styled.div`
     filter: drop-shadow(0vw 0vw 0.1vw black);
 `
 const Para = styled.p`
-    font-size: 1.2vw;
+font-size: 1.2vw;
     border-radius: 1vw;
     width: 18vw;
     -webkit-filter: drop-shadow(0vw 0vw 1vw #000000);
-    filter: drop-shadow(0vw 0vw 1vw #444444);
-    color: #abc0ff;
+    filter: drop-shadow(0vw 0vw 1vw white);
+    color: #000000;
+    text-shadow: 0 0 12vw white;
 `
 const Background = styled.div`
-    background-image: url(/static/media/background1.43d255c5.jpg);
     width: 100vw;
     position: absolute;
     height: 15vw;
     margin-top: -3vw;
+    overflow: hidden;
     background-size: cover;
     background-position: right;
-    border-top: solid #ffffff8c 1vw;
-    border-bottom: solid #ffffff8c 1vw;
+    border-top: solid #002a7d .4vw;
+    border-bottom: solid #ffa5008c .4vw;
+    -webkit-filter: blur(1px);
     -webkit-filter: blur(1px);
     -webkit-filter: blur(1px);
     filter: blur(1px);
@@ -85,8 +88,28 @@ class People extends Component{
 
     render() {
         return (
-        <Wrapper>
-        <Background style={{backgroundImage: `url(${background})`}}/>
+            <Wrapper>
+                <Background>
+                <ParallaxBanner
+                    layers={[
+                        {
+                            image: 'https://static1.squarespace.com/static/582dc9ea6a4963e5091cd8cd/t/5c0c26c8758d46a39cc09ad4/1544300256727/?format=2500w',
+                            amount: 0.4,
+                        },
+                    ]}
+                    style={{
+                    height: '5000px',
+                    position: 'absolute',
+                    overflow: 'none',
+                    width: '100vw',
+                    height: '39vw',
+                    zIndex: '-4',
+                    marginTop: '-10vw',
+                    marginBottom: '8vw'
+                    }}
+                    ></ParallaxBanner>
+                    </Background>
+        {/* <Background style={{backgroundImage: `url(${background})`}}/> */}
             <Pic0>
                 <Indiv>
                     <Img src={require('../../picture0.jpg')} alt="HEY! WHERE'S THE PICC???"/>
