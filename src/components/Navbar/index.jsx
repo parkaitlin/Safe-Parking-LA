@@ -1,9 +1,10 @@
-import React,{Component} from 'react'
+import React, { Component, useState } from 'react'
 import * as routes from '../constants/routes'
 import styled from 'styled-components'
 import call from '../../call.png'
+import { anyTypeAnnotation } from '@babel/types';
 
-const Wrapper=styled.div`
+const Wrapper = styled.div`
     width: 100vw;
     height: 5vw;
     display: -webkit-inline-box;
@@ -22,8 +23,21 @@ const Wrapper=styled.div`
     margin-top: 0vw;
     -webkit-text-decoration: none;
     text-decoration: none;
+    .phone {
+        > div {
+            color: white;
+            background-color: black;
+            height: 50px;
+            position: absolute;
+            left: 74%;
+            font-size: 2em;
+            width: 220px;
+            font-weight: 900;
+            border-radius: 4px;
+        }
+    }
 `
-const Link=styled.a`
+const Link = styled.a`
     padding-left: 1vw;
     text-decoration:none;
     font-size: 1vw;
@@ -33,47 +47,57 @@ const Link=styled.a`
         transition: .5s;
     }
 `
-const LogoWrap=styled.a`
+const LogoWrap = styled.a`
     padding-left: 0vw;
     height: 3.8vw;
     width: 16vw;
     position: absolute;
     margin-left: -82vw;
 `
-const Logo=styled.div`
+const Logo = styled.div`
     height: 3.8vw;
     width: 16vw;
     -webkit-text-decoration: none;
     text-decoration: none;
     background-repeat:no-repeat;
     background-size: contain;
-    background-image: url('https://static1.squarespace.com/static/582dc9ea6a4963e5091cd8cd/t/5c0f1cdb4ae2379685e87b3d/1544494308809/safeparkingla_logo.png?format=1500w')
+    background-image: url('https://static1.squarespace.com/static/582dc9ea6a4963e5091cd8cd/t/5c0f1cdb4ae2379685e87b3d/1544494308809/safeparkingla_logo.png?format=1500w');
 `
-const Call=styled.div`
+const Call = styled.div`
     padding-left: 3vw;
     margin-right: 3vw;
     text-decoration:none;
 `
-const Ring=styled.img`
+const Ring = styled.img`
     width: 3.5vw;
-    filter: sepia(100%) contrast(100%) saturate(10000%) hue-rotate(-50deg) brightness(.86)
+    filter: sepia(100%) contrast(100%) saturate(10000%) hue-rotate(-50deg) brightness(.86);
 `
 
-class NavBar extends Component{
-    getHome=() => {
-        this.props.history.push('/')
+const NavBar = () => {
+    const [display, setDisplay] = useState('none')
+    const showModal = () => {
+        setDisplay('block')
     }
-    render() {
-        return(
+    const hideModal = () => {
+        setDisplay('none')
+    }
+    return (
         <Wrapper>
-                <LogoWrap href='/'><Logo/></LogoWrap>
-                <Link href='https://www.safeparkingla.org/about'>About</Link>
-                <Link href='/apply'>Apply to Park</Link>
-                <Link href={routes.RESOURCE}>Resources</Link>
-                <Link href='https://www.safeparkingla.org/contact'>Contact</Link>
-                <Call><Ring src={call}/></Call>
+            <LogoWrap href='/'><Logo /></LogoWrap>
+            <Link href='https://www.safeparkingla.org/about'>About</Link>
+            <Link href={routes.APPLYFORPARKING}>Apply to Park</Link>
+            <Link href={routes.RESOURCE}>Resources</Link>
+            <Link href='https://www.safeparkingla.org/contact'>Contact</Link>
+            <Call
+                className="phone"
+                onMouseEnter={showModal}
+                onMouseLeave={hideModal}
+                >
+                <Ring src={call} />
+                <div style={{ display }}>
+                    (213) 793 - 8493
+                </div>
+            </Call>
         </Wrapper>)
-    }
 }
-
 export default NavBar

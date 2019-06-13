@@ -7,19 +7,16 @@ const ApplyForParking = () => {
     <>
       <Title>
         <h1>
-          Apply To Park
+          APPLY TO PARK
         </h1>
       </Title>
       <MainContainer>
         <div>
-
-          {/* <h1>
-            Overnight Parking FAQ
-          </h1>
-          <br /> */}
-
           <aside>
-            <h1>Amenities</h1>
+
+            <h1>
+            Our mission is to provide safe parking options for people experiencing homelessness in their vehicles. Each parking lot includes the following amenities:
+            </h1>
             <ul>
               <li>Guards</li>
               <li>Bathrooms</li>
@@ -27,15 +24,18 @@ const ApplyForParking = () => {
             </ul>
           </aside>
 
-          <h1>Process</h1>
+          <br />
+          <br />
 
+          <h1>Process</h1>
+          
           <br />
 
           <ol>
-            <li>Call to inquire about eligibility.</li>
-            <li>Complete online application form for a permit.</li>
-            <li>Complete online compliance form.</li>
-            <li>Set up a 5 minute appointment.</li>
+            <li>Call us at (213) 793-8493 to determine your eligibility.</li>
+            <li>Start an application by filling out *both* the Interest Form and Compliance Form below.</li>
+            <li>Set up a 5 minute appointment with our team</li>
+            <li>Be sure to check out our other <a href="#">Resources</a>, <a href="#">FAQs</a>, and <a href="#">Green Streets</a>.</li>
           </ol>
 
           <section>
@@ -45,7 +45,7 @@ const ApplyForParking = () => {
             <div>
               <br />
               <button>
-                Apply for Permit
+                Interest Form
               </button>
               <br />
               <button>
@@ -54,22 +54,9 @@ const ApplyForParking = () => {
               {/* <p>
                 Safety rules during your stay.
               </p> */}
-              <p>
                 <br />
-                You must have the following:
-                <p>
-                  <li>
-                    driver's license
-                  </li>
-                </p>
-                <p>
-                  <li>
-                    vehicle registration
-                  </li>
-                </p>
-                <p>
-                  <li>insurance</li>
-                </p>
+              <p>
+                Take the first steps towards safe parking.
               </p>
             </div>
           </section>
