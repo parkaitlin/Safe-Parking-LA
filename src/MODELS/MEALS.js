@@ -1,4 +1,4 @@
-const meals = [
+export const meals = [
 		{
 			PROGRAM_NAME: "Church in the Park- Breakfast",
 			SERVICE_PLANNING_AREA: "SPA 3 - San Gabriel Valley",
