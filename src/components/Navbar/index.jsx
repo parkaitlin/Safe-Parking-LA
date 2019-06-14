@@ -23,19 +23,6 @@ const Wrapper = styled.div`
     margin-top: 0vw;
     -webkit-text-decoration: none;
     text-decoration: none;
-    .phone {
-        > div {
-            color: white;
-            background-color: black;
-            height: 50px;
-            position: absolute;
-            left: 74%;
-            font-size: 2em;
-            width: 220px;
-            font-weight: 900;
-            border-radius: 4px;
-        }
-    }
 `
 const Link = styled.a`
     padding-left: 1vw;
@@ -72,17 +59,33 @@ const Ring = styled.img`
     width: 3.5vw;
     filter: sepia(100%) contrast(100%) saturate(10000%) hue-rotate(-50deg) brightness(.86);
 `
+const PhoneNumber = styled.div`
+        color: #FFF;
+        position: relative;
+        left: 22%;
+        top: 65%;
+        background-color: black;
+        font-size: 2em;
+        width: 214px;
+        height: 41px;
+        border-radius: 4px
+`
 
 const NavBar = () => {
-    const [display, setDisplay] = useState('none')
+    const [visibility, setVisibility] = useState('hidden')
     const showModal = () => {
-        setDisplay('block')
+        setVisibility('visible')
     }
     const hideModal = () => {
-        setDisplay('none')
+        setVisibility('hidden')
     }
     return (
         <Wrapper>
+            <PhoneNumber style={{ visibility }}>
+                <div>
+                    (213) 793 - 8493
+                </div>
+            </PhoneNumber>
             <LogoWrap href='/'><Logo /></LogoWrap>
             <Link href='https://www.safeparkingla.org/about'>About</Link>
             <Link href={routes.APPLYFORPARKING}>Apply to Park</Link>
@@ -92,11 +95,8 @@ const NavBar = () => {
                 className="phone"
                 onMouseEnter={showModal}
                 onMouseLeave={hideModal}
-                >
+            >
                 <Ring src={call} />
-                <div style={{ display }}>
-                    (213) 793 - 8493
-                </div>
             </Call>
         </Wrapper>)
 }
