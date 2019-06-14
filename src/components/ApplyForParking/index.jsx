@@ -1,6 +1,7 @@
 import React from 'react'
 import { MainContainer } from './styled'
-import { Title } from './styledTitle'
+import {Title} from './styledTitle'
+import Footer from '../Footer'
 
 const ApplyForParking = () => {
   return (
@@ -66,6 +67,7 @@ const ApplyForParking = () => {
           </section>
         </div>
       </MainContainer>
+      <Footer/>
     </>
   )
 }

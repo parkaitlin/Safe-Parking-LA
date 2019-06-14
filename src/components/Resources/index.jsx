@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { ResourcesContainer } from './styled'
-import { Title } from '../ApplyForParking/styledTitle'
+import {Title} from '../ApplyForParking/styledTitle'
+import Footer from '../Footer'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPlusCircle, faTimes} from '@fortawesome/free-solid-svg-icons'
@@ -258,7 +259,7 @@ class Resources extends Component {
   render() {
     const { secondCity, city, cityTwo, grocery, meal, shower, laundry, transportation, storage, mentalHealth, accessPoint, subAbuse } = this.state
     return (
-      <>
+      <div>
         <Title>
           <h1>Resources</h1>
         </Title>
@@ -491,7 +492,7 @@ class Resources extends Component {
             </div>
           </main>
         </ResourcesContainer>
-      </>
+      </div>
     )
   }
 }
