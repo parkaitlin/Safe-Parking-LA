@@ -25,7 +25,7 @@ class App extends Component {
           <Route exact path={routes.RESOURCE} render={()=> <Resources/>} />
           <Route exact path={routes.APPLYFORPARKING} render={() => <ApplyForParking />} />
         </Switch>
-        <div><Footer/></div>
+        {/* <div><Footer/></div> */}
       </div>
     )
 

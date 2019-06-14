@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import Testimonials from '../Testimonials'
 import styled from 'styled-components'
 import {ParallaxBanner} from 'react-scroll-parallax'
+import Footer from '../Footer'
 
 
 const Wrapper=styled.div`
@@ -192,6 +193,7 @@ class Home extends Component{
                         </form>
                     </ButtnHolder>
                 </Info>
+                <Footer/>
                 </div>
         )
     }
