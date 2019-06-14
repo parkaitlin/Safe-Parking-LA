@@ -62,13 +62,21 @@ const Ring = styled.img`
 const PhoneNumber = styled.div`
         color: #FFF;
         position: relative;
-        left: 22%;
-        top: 65%;
-        background-color: black;
-        font-size: 2em;
-        width: 214px;
-        height: 41px;
-        border-radius: 4px
+        left: 23%;
+        top: 88%;
+        background-color: rgba(19, 103, 155, 0.8);
+        border: 1.5px solid rgb(223, 142, 56);
+        font-size: 2vw;
+        font-weight: 800;
+        border-radius: 6px;
+        font-family: nunito;
+        width: 17vw;
+        height: 15px;
+        padding: 0.5em;
+        padding-bottom: 1.5em;
+        text-align: center;
+        align-self: center;
+
 `
 
 const NavBar = () => {
