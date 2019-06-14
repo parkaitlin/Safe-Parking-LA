@@ -334,7 +334,7 @@ class Resources extends Component {
                 <SpaSeven />
                 <SpaEight />
               </select>
-              <FontAwesomeIcon icon={faTimes} onClick={this.subCity}/>
+              <h6><FontAwesomeIcon icon={faTimes} onClick={this.subCity}/></h6>
                 </>
                 /* this is the icon */
               : <h6><FontAwesomeIcon icon={faPlusCircle} onClick={this.addCity}/></h6>
@@ -350,32 +350,36 @@ class Resources extends Component {
                 <label>
                   Meals
                 </label>
-                <br />
               </div>
 
               <div>
                 <input type="checkbox" name="grocery" onChange={this.handleCheck} />
                 <label>
-                  Groceries
+                  Food/Groceries
+                </label>
+              </div>
+              
+              <div>
+                <input type="checkbox" name="shower" onChange={this.handleCheck} />
+                <label>
+                  Showers
                 </label>
               </div>
 
               <div>
-                <h1>Meals</h1>
-                <MealList list={this.state.meals} listTwo={this.state.meals2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
-              </div>
-              
-              <div>
-                <h1>Showers</h1>
-                <ShowerList list={this.state.showers} listTwo={this.state.showers2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
+                <input type="checkbox" name="laundry" onChange={this.handleCheck} />
+                <label>
+                  Laundry
+                </label>
               </div>
 
-
               <div>
-                <h1>Laundry</h1>
-                <LaundryList list={this.state.laundryOptions} listTwo={this.state.laundryOptions2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
+                <input type="checkbox" name="transportation" onChange={this.handleCheck} />
+                <label>
+                  Transportation
+                </label>
               </div>
-              
+
               <div>
                 <input type="checkbox" name="storage" onChange={this.handleCheck} />
                 <label>
@@ -424,64 +428,64 @@ class Resources extends Component {
               {
                 grocery &&
                 <div>
-                  <h1>Groceries</h1>
+                  <h1>Food/Groceries</h1>
                   <GroceryList list={this.state.groceries} listTwo={this.state.groceries2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
                 </div>
               }
               {
                 meal &&
                 <div>
-                  <h4>Meals</h4>
-                  <MealList list={this.state.meals} />
+                  <h1>Meals</h1>
+                  <MealList list={this.state.meals} listTwo={this.state.meals2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
                 </div>
               }
               {
                 shower &&
                 <div>
-                  <h4>Showers</h4>
-                  <ShowerList list={this.state.showers} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
+                  <h1>Showers</h1>
+                  <ShowerList list={this.state.showers} listTwo={this.state.showers2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
                 </div>
               }
               {
                 laundry &&
                 <div>
-                  <h4>Laundry</h4>
-                  <LaundryList list={this.state.laundryOptions} />
+                  <h1>Laundry</h1>
+                  <LaundryList list={this.state.laundryOptions} listTwo={this.state.laundryOptions2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
                 </div>
               }
               {
                 transportation &&
                 <div>
-                  <h4>Transportation</h4>
-                  <TransportList list={this.state.transportOptions} />
+                  <h1>Transportation</h1>
+                  <TransportList list={this.state.transportOptions} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
                 </div>
               }
               {
                 storage &&
                 <div>
-                  <h4>Storage</h4>
-                  <StorageList list={this.state.storageOptions} />
+                  <h1>Storage</h1>
+                  <StorageList list={this.state.storageOptions} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
                 </div>
               }
               {
                 mentalHealth &&
                 <div>
-                  <h4>Mental Health Centers</h4>
-                  <MentalHealthList list={this.state.mentalHealthCenters} />
+                  <h1>Mental Health Centers</h1>
+                  <MentalHealthList list={this.state.mentalHealthCenters} listTwo={this.state.mentalHealthCenters2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
                 </div>
               }
               {
                 accessPoint &&
                 <div>
-                  <h4>Access Point Centers</h4>
-                  <AccessList list={this.state.accessPoints} />
+                  <h1>Access Point Centers</h1>
+                  <AccessList list={this.state.accessPoints} listTwo={this.state.accessPoints2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
                 </div>
               }
               {
                 subAbuse &&
                 <div>
-                  <h4>Substance Abuse Centers</h4>
-                  <SubAbuseList list={this.state.subAbuseCenters} />
+                  <h1>Substance Abuse Centers</h1>
+                  <SubAbuseList list={this.state.subAbuseCenters} listTwo={this.state.subAbuseCenters2} secondCity={secondCity} city={city} cityTwo={cityTwo}/>
                 </div>
               }
             </div>
