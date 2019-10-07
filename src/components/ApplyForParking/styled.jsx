@@ -1,48 +1,47 @@
 import styled from 'styled-components'
 
 export const MainContainer = styled.div`
-  
   height: 180vh;
   display: flex;
   justify-content: center;
 
   > div {
-      width: 1000px;
-      padding-right: 2em;
-      padding-left: 2em;
-      > h1:nth-of-type(1) {
-        text-align: center;
-        font-size: 3em;
-        padding-top: 1em;
-        font-family: Nunito;
-      }
-      > h1:nth-of-type(2) {
+    width: 1000px;
+    padding-right: 2em;
+    padding-left: 2em;
+    > h1:nth-of-type(1) {
+      text-align: center;
+      font-size: 3em;
+      padding-top: 1em;
+      font-family: Nunito;
+    }
+    > h1:nth-of-type(2) {
+      padding-top: 3em;
+      text-align: center;
+      font-family: Nunito;
+    }
+    aside {
+      display: flex;
+      flex-direction: column;
+      > h1 {
         padding-top: 3em;
         text-align: center;
+        font-size: 2em;
         font-family: Nunito;
       }
-      aside {
-        display: flex;
-        flex-direction: column;
-        > h1 {
-          padding-top: 3em;
-          text-align: center;
-          font-size: 2em;
+      ul {
+        li {
+          text-align: left;
+          font-size: 1.5em;
+          list-style: none;
+          position: relative;
+          left: 10em;
           font-family: Nunito;
-        }
-        ul {
-          li {
-            text-align: left;
-            font-size: 1.5em;
-            list-style: none;
-            position: relative;
-            left: 10em;
-            font-family: Nunito;
 
-            width: 20em;
-          }
+          width: 20em;
         }
       }
+    }
     ol {
       li {
         margin-bottom: 1.5em;
@@ -91,10 +90,10 @@ export const MainContainer = styled.div`
       }
     }
   }
-  @media(max-width: 650px) {
-   display: block;
-   height: 200vh;
-   > div {
+  @media (max-width: 650px) {
+    display: block;
+    height: 200vh;
+    > div {
       width: 100%;
       > h1:nth-of-type(1) {
         font-size: 2em;
@@ -114,7 +113,7 @@ export const MainContainer = styled.div`
       }
       ol {
         li {
-          font-size: 1.2em
+          font-size: 1.2em;
         }
       }
       section {
@@ -135,7 +134,6 @@ export const MainContainer = styled.div`
           padding-bottom: 2em;
         }
       }
-   }
+    }
   }
-
 `

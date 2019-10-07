@@ -6,7 +6,7 @@ export const Title = styled.div`
   display: flex;
   height: 30vh;
   width: 100vw;
-  background-image: url("https://i.imgur.com/jSXuWId.png");
+  background-image: url('https://i.imgur.com/jSXuWId.png');
   h1 {
     font-family: Nunito;
     font-weight: 400;
@@ -14,7 +14,7 @@ export const Title = styled.div`
     text-align: left;
     padding-left: 1em;
   }
-  @media(max-width: 650px)  {
+  @media (max-width: 650px) {
     font-size: 1em;
   }
 `
