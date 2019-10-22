@@ -9,6 +9,26 @@ export const HomeContainer = styled.div`
   .Top-Container {
     flex: 1;
     background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .logo-wrapper {
+      display: flex;
+      justify-content: center;
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        background-color: orange;
+        width: 50%;
+      }
+      .p-content {
+        .p-wrapper {
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
   }
   .Middle-Container {
     flex: 1;
