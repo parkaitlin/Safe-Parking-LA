@@ -22,7 +22,7 @@ class People extends Component {
         <Title>WHO WE HELP</Title>
         <Pic0>
           <Indiv>
-            <Img src={require('../../picture0.jpg')} alt='alt-img' />
+            <Img src={require('../../assets/img/picture0.jpg')} alt='alt-img' />
           </Indiv>
           <Quoth>
             <Para>
@@ -34,7 +34,7 @@ class People extends Component {
         </Pic0>
         <Pic1>
           <Indiv>
-            <Img src={require('../../picture1.jpg')} alt='alt-img' />
+            <Img src={require('../../assets/img/picture1.jpg')} alt='alt-img' />
           </Indiv>
           <Quoth>
             <Para>
@@ -47,7 +47,7 @@ class People extends Component {
         </Pic1>
         <Pic2>
           <Indiv>
-            <Img src={require('../../picture2.jpg')} alt='alt-img' />
+            <Img src={require('../../assets/img/picture2.jpg')} alt='alt-img' />
           </Indiv>
           <Quoth>
             <Para>

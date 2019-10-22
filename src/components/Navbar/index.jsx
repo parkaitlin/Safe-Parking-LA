@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react'
 import * as routes from '../constants/routes'
-import call from '../../call.png'
+import call from '../../../src/assets/img/call.png'
 
 import { Wrapper, Link, LogoWrap, Logo, Call, Ring, PhoneNumber } from './style'
 
