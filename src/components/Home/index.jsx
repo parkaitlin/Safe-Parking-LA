@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <HomeContainer>
       <div className='Top-Container'>
-        <div className='logo-wrapper'>
-          <div className='logo-container'>
+        <div className='logo-content'>
+          <div className='logo-wrapper'>
             <img src={logo} alt='logo' />
           </div>
         </div>
@@ -20,14 +20,21 @@ const Home = () => {
               Safe Parking LA provides a safe and legal intervention for people
               experiencing homelessness who are living in their vehicles.
             </p>
-
+            <br />
             <p>
               In Los Angeles County, there are over 15,700 people living in
               their vehicles each night. Individuals living in their cars
               represent over 25% of the population of people experiencing
               homelessness in LA County.
             </p>
+            <br />
             <p>We are here to help.</p>
+          </div>
+        </div>
+        <div className='btn-content'>
+          <div className='btn-wrapper'>
+            <button>Apply To Park</button>
+            <button>Additional Resources</button>
           </div>
         </div>
       </div>
