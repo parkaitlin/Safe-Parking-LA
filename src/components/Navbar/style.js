@@ -19,6 +19,7 @@ export const Wrapper = styled.div`
   margin-top: 0vw;
   -webkit-text-decoration: none;
   text-decoration: none;
+  padding-right: 4%;
 `
 export const Link = styled.a`
   padding-left: 1vw;
@@ -36,7 +37,7 @@ export const LogoWrap = styled.a`
   height: 3.8vw;
   width: 16vw;
   position: absolute;
-  margin-left: -82vw;
+  margin-left: -79vw;
 `
 export const Logo = styled.div`
   height: 3.8vw;

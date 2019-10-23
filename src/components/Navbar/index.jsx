@@ -1,21 +1,11 @@
 import React, { useState } from 'react'
 import * as routes from '../constants/routes'
 
-import { Wrapper, Link, LogoWrap, Logo, Call, Ring, PhoneNumber } from './style'
+import { Wrapper, Link, LogoWrap, Logo, PhoneNumber } from './style'
 
 const NavBar = () => {
-  const [visibility, setVisibility] = useState('hidden')
-  const showModal = () => {
-    setVisibility('visible')
-  }
-  const hideModal = () => {
-    setVisibility('hidden')
-  }
   return (
     <Wrapper>
-      <PhoneNumber style={{ visibility }}>
-        <div>(213) 793 - 8493</div>
-      </PhoneNumber>
       <LogoWrap href='/'>
         <Logo />
       </LogoWrap>
@@ -23,11 +13,6 @@ const NavBar = () => {
       <Link href={routes.APPLYFORPARKING}>Apply to Park</Link>
       <Link href={routes.RESOURCE}>Resources</Link>
       <Link href='https://www.safeparkingla.org/contact'>Contact</Link>
-      <Call
-        className='phone'
-        onMouseEnter={showModal}
-        onMouseLeave={hideModal}
-      ></Call>
     </Wrapper>
   )
 }
