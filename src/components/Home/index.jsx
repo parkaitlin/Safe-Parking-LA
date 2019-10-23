@@ -5,6 +5,7 @@ import personTwo from '../../assets/img/personTwo.png'
 import personThree from '../../assets/img/personThree.png'
 import logo from '../../assets/img/logo.png'
 
+import * as routes from '../constants/routes'
 const Home = () => {
   return (
     <HomeContainer>
@@ -33,8 +34,8 @@ const Home = () => {
         </div>
         <div className='btn-content content-alignment'>
           <div className='btn-wrapper wrapper-alignment'>
-            <button>Apply To Park</button>
-            <button>Additional Resources</button>
+            <a href={routes.APPLYFORPARKING}>Apply To Park</a>
+            <a href={routes.RESOURCE}>Additional Resources</a>
           </div>
         </div>
       </div>
@@ -96,8 +97,8 @@ const Home = () => {
             </p>
             <div className='btn-content content-alignment'>
               <div className='btn-wrapper wrapper-alignment'>
-                <button>Apply To Park</button>
-                <button>Additional Resources</button>
+                <a href={routes.APPLYFORPARKING}>Apply To Park</a>
+                <a href={routes.RESOURCE}>Additional Resources</a>
               </div>
             </div>
           </div>

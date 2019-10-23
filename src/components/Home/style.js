@@ -5,6 +5,10 @@ export const HomeContainer = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: column;
+  a {
+    line-height: 48px;
+    text-decoration: none;
+  }
   .Container-Settings {
     display: flex;
     flex-direction: column;
@@ -22,7 +26,7 @@ export const HomeContainer = styled.div`
     .btn-wrapper {
       max-width: 928px;
       justify-content: space-evenly;
-      button {
+      a {
         width: 180px;
         height: 48px;
         border-radius: 10px;

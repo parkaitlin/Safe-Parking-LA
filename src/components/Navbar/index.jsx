@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { useState } from 'react'
 import * as routes from '../constants/routes'
 import call from '../../../src/assets/img/call.png'
 
