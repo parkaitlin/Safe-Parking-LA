@@ -38,7 +38,36 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='Middle-Container'>Hey</div>
+      <div className='Middle-Container'>
+        <div className='middle-title-content'>
+          <h1>Who We Help</h1>
+        </div>
+        <div className='middle-stories-content '>
+          <div className='middle-stories-wrapper '>
+            <div className='middle-stories'>
+              <img src={personOne} alt='placedholder for human' />
+              <p>
+                “Safe Parking LA helped me find a safe place to sleep
+                overnight.“
+              </p>
+            </div>
+            <div className='middle-stories'>
+              <img src={personTwo} alt='placedholder for human' />
+              <p>
+                “My daughter and I are so thankful for Safe Parking providing a
+                safe place in my time of need.”
+              </p>
+            </div>
+            <div className='middle-stories'>
+              <img src={personThree} alt='placedholder for human' />
+              <p>
+                “I was able to sleep safely and get resources to help me get
+                back into housing.“
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className='Bottom-Container'>Hey</div>
     </HomeContainer>
   )

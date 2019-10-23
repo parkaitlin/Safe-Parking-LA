@@ -6,6 +6,8 @@ export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   .Container-Settings {
+    display: flex;
+    flex-direction: column;
     .content-alignment {
       display: flex;
       justify-content: center;
@@ -18,8 +20,6 @@ export const HomeContainer = styled.div`
   }
   .Top-Container {
     flex: 1.25;
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     .logo-content {
       .logo-wrapper {
@@ -62,6 +62,33 @@ export const HomeContainer = styled.div`
   .Middle-Container {
     flex: 1;
     background-color: blue;
+    .middle-title-content {
+      h1 {
+        font-family: Nunito;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #5e5e5e;
+      }
+    }
+    .middle-stories-content {
+      .middle-stories-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        .middle-stories {
+          background-color: yellow;
+          flex: 0.3;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            height: 90px;
+            width: 90px;
+          }
+        }
+      }
+    }
   }
   .Bottom-Container {
     flex: 1;
