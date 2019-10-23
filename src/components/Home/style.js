@@ -21,6 +21,7 @@ export const HomeContainer = styled.div`
   .Top-Container {
     flex: 1.25;
     justify-content: space-evenly;
+    min-height: 480px;
     .logo-content {
       .logo-wrapper {
         max-width: 928px;
@@ -61,8 +62,15 @@ export const HomeContainer = styled.div`
   }
   .Middle-Container {
     flex: 1;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 340px;
     .middle-title-content {
+      height: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       h1 {
         font-family: Nunito;
         font-size: 20px;
@@ -72,19 +80,28 @@ export const HomeContainer = styled.div`
       }
     }
     .middle-stories-content {
+      height: 100%;
+      min-height: 61px;
+      display: flex;
       .middle-stories-wrapper {
+        min-height: 250px;
         display: flex;
         justify-content: space-evenly;
         .middle-stories {
-          background-color: yellow;
           flex: 0.3;
           display: flex;
           flex-direction: column;
           align-items: center;
-
+          justify-content: space-evenly;
           img {
             height: 90px;
             width: 90px;
+          }
+          p {
+            font-family: Nunito;
+            font-size: 20px;
+            text-align: center;
+            color: #5e5e5e;
           }
         }
       }
@@ -115,6 +132,20 @@ export const HomeContainer = styled.div`
           flex-direction: column;
           align-items: center;
           min-width: 0;
+        }
+      }
+    }
+    .Middle-Container {
+      .middle-title-content {
+        h1 {
+        }
+      }
+      .middle-stories-content {
+        min-height: initial;
+        .middle-stories-wrapper {
+          .middle-stories {
+            min-height: initial;
+          }
         }
       }
     }

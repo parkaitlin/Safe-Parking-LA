@@ -38,6 +38,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <hr />
       <div className='Middle-Container'>
         <div className='middle-title-content'>
           <h1>Who We Help</h1>
@@ -59,7 +60,7 @@ const Home = () => {
               </p>
             </div>
             <div className='middle-stories'>
-              <img src={personThree} alt='placedholder for human' />
+              <img src={personThree} alt='placeholder for human' />
               <p>
                 “I was able to sleep safely and get resources to help me get
                 back into housing.“
