@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import * as routes from '../constants/routes'
-import call from '../../../src/assets/img/call.png'
 
 import { Wrapper, Link, LogoWrap, Logo, Call, Ring, PhoneNumber } from './style'
 
@@ -24,9 +23,11 @@ const NavBar = () => {
       <Link href={routes.APPLYFORPARKING}>Apply to Park</Link>
       <Link href={routes.RESOURCE}>Resources</Link>
       <Link href='https://www.safeparkingla.org/contact'>Contact</Link>
-      <Call className='phone' onMouseEnter={showModal} onMouseLeave={hideModal}>
-        <Ring src={call} />
-      </Call>
+      <Call
+        className='phone'
+        onMouseEnter={showModal}
+        onMouseLeave={hideModal}
+      ></Call>
     </Wrapper>
   )
 }

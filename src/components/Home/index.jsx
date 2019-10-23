@@ -12,7 +12,7 @@ const Home = () => {
       <div className='Top-Container Container-Settings'>
         <div className='logo-content content-alignment'>
           <div className='logo-wrapper wrapper-alignment'>
-            <img src={logo} alt='logo' />
+            <img src='https://i.imgur.com/5xVSaTJ.png' alt='logo' />
           </div>
         </div>
         <div className='p-content content-alignment'>
@@ -47,21 +47,30 @@ const Home = () => {
         <div className='middle-stories-content '>
           <div className='middle-stories-wrapper '>
             <div className='middle-stories'>
-              <img src={personOne} alt='placedholder for human' />
+              <img
+                src='https://i.imgur.com/IVmGJVb.png'
+                alt='placedholder for human'
+              />
               <p>
                 “Safe Parking LA helped me find a safe place to sleep
                 overnight.“
               </p>
             </div>
             <div className='middle-stories'>
-              <img src={personTwo} alt='placedholder for human' />
+              <img
+                src='https://i.imgur.com/A617kFj.png'
+                alt='placedholder for human'
+              />
               <p>
                 “My daughter and I are so thankful for Safe Parking providing a
                 safe place in my time of need.”
               </p>
             </div>
             <div className='middle-stories'>
-              <img src={personThree} alt='placeholder for human' />
+              <img
+                src='https://i.imgur.com/6AjrXBA.png'
+                alt='placeholder for human'
+              />
               <p>
                 “I was able to sleep safely and get resources to help me get
                 back into housing.“
