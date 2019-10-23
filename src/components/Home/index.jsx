@@ -1,11 +1,7 @@
 import React from 'react'
-import { HomeContainer } from './style'
-import personOne from '../../assets/img/personOne.png'
-import personTwo from '../../assets/img/personTwo.png'
-import personThree from '../../assets/img/personThree.png'
-import logo from '../../assets/img/logo.png'
-
 import * as routes from '../constants/routes'
+import { HomeContainer } from './style'
+
 const Home = () => {
   return (
     <HomeContainer>

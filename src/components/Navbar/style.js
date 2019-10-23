@@ -25,8 +25,9 @@ export const Link = styled.a`
   text-decoration: none;
   font-size: 1vw;
   color: black;
+  font-family: Nunito;
   &:hover {
-    color: blue;
+    color: orange;
     transition: 0.5s;
   }
 `
