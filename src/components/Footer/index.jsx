@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -42,13 +41,25 @@ class Footer extends Component {
         <Social>
           <Title>SOCIAL NETWORKS</Title>
           <div>
-            <a href='https://www.facebook.com/SafeParkingLA/' target='_blank'>
+            <a
+              rel='noopener noreferrer'
+              href='https://www.facebook.com/SafeParkingLA/'
+              target='_blank'
+            >
               <FontAwesomeIcon icon={faFacebookSquare} className='sm-links' />
             </a>
-            <a href='https://www.instagram.com/safeparking_la/' target='_blank'>
+            <a
+              rel='noopener noreferrer'
+              href='https://www.instagram.com/safeparking_la/'
+              target='_blank'
+            >
               <FontAwesomeIcon icon={faInstagram} className='sm-links' />
             </a>
-            <a href='mailto:info@safeparkingla.org' target='_blank'>
+            <a
+              rel='noopener noreferrer'
+              href='mailto:info@safeparkingla.org'
+              target='_blank'
+            >
               <FontAwesomeIcon icon={faEnvelope} className='sm-links' />
             </a>
           </div>

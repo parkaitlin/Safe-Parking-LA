@@ -442,7 +442,6 @@ export const meals = [
 			WEBSITE: "N/A",
 			EMAIL: "N/A",
 			PHONE: " (310) 548-1333 ",
-			HOURS_OF_OPERATION: "Thur. 6pm, Sun 8am",
 			HOURS_OF_OPERATION: "Thursday: 6:00pm-(UNKNOWN) & Sunday: 8:00am-(UNKNOWN)",
 			WALK_INS: "Yes",
 			ELIGIBILITY_REQUIREMENTS: "N/A",

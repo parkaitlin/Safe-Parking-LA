@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { ResourcesContainer } from './styled'
 import { Title } from '../ApplyForParking/styledTitle'
-import Footer from '../Footer'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle, faTimes } from '@fortawesome/free-solid-svg-icons'

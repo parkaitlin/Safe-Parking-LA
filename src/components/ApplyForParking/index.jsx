@@ -50,7 +50,7 @@ const ApplyForParking = () => {
 
           <section>
             <div>
-              <img src='https://i.imgur.com/uapO4NZ.png' />
+              <img alt='img' src='https://i.imgur.com/uapO4NZ.png' />
             </div>
             <div>
               <br />

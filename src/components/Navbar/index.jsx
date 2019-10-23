@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import * as routes from '../constants/routes'
 
-import { Wrapper, Link, LogoWrap, Logo, PhoneNumber } from './style'
+import { Wrapper, Link, LogoWrap, Logo } from './style'
 
 const NavBar = () => {
   return (
