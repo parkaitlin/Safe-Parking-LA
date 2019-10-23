@@ -69,6 +69,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <hr />
       <div className='Bottom-Container'>Hey</div>
     </HomeContainer>
   )

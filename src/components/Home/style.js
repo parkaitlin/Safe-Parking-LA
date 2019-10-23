@@ -76,7 +76,7 @@ export const HomeContainer = styled.div`
         font-size: 20px;
         font-weight: bold;
         text-align: center;
-        color: #5e5e5e;
+        color: #e18f2d;
       }
     }
     .middle-stories-content {
@@ -136,6 +136,8 @@ export const HomeContainer = styled.div`
       }
     }
     .Middle-Container {
+      height: 100vh;
+      max-height: initial;
       .middle-title-content {
         h1 {
         }
@@ -143,8 +145,10 @@ export const HomeContainer = styled.div`
       .middle-stories-content {
         min-height: initial;
         .middle-stories-wrapper {
+          flex-direction: column;
           .middle-stories {
             min-height: initial;
+            margin: 0 25px;
           }
         }
       }
