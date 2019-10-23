@@ -70,7 +70,39 @@ const Home = () => {
         </div>
       </div>
       <hr />
-      <div className='Bottom-Container'>Hey</div>
+      <div className='Bottom-Container'>
+        <div className='bottom-title-content'>
+          <h1>What We Do</h1>
+        </div>
+        <div className='bottom-p-content'>
+          <div className='bottom-p-wrapper'>
+            <p>
+              Our mission is simple, we want to provide safe parking options for
+              people experiencing homelessness in their vehicles across Los
+              Angeles.
+            </p>
+            <br />
+            <p>
+              Founded in 2016, Safe Parking LA is a coordinating organization
+              which assists homeless families and individuals living in their
+              vehicles. We support the implementation of "Safe Parking Lots",
+              which provide individuals a safe place to park each night,
+              restroom access, a security guard, and social service resources.
+            </p>
+            <br />
+            <p>
+              We also offer additional resources to help get you back into a
+              home.
+            </p>
+            <div className='btn-content content-alignment'>
+              <div className='btn-wrapper wrapper-alignment'>
+                <button>Apply To Park</button>
+                <button>Additional Resources</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </HomeContainer>
   )
 }

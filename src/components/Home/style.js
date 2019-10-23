@@ -18,6 +18,24 @@ export const HomeContainer = styled.div`
       }
     }
   }
+  .btn-content {
+    .btn-wrapper {
+      max-width: 928px;
+      justify-content: space-evenly;
+      button {
+        width: 180px;
+        height: 48px;
+        border-radius: 10px;
+        background-color: #12679b;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        border: none;
+      }
+    }
+  }
   .Top-Container {
     flex: 1.25;
     justify-content: space-evenly;
@@ -41,31 +59,13 @@ export const HomeContainer = styled.div`
         }
       }
     }
-    .btn-content {
-      .btn-wrapper {
-        max-width: 928px;
-        justify-content: space-evenly;
-        button {
-          width: 180px;
-          height: 48px;
-          border-radius: 10px;
-          background-color: #12679b;
-          font-family: Helvetica;
-          font-size: 12px;
-          font-weight: bold;
-          text-align: center;
-          color: #ffffff;
-          border: none;
-        }
-      }
-    }
   }
   .Middle-Container {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-height: 340px;
+    min-height: 340px;
     .middle-title-content {
       height: 25%;
       display: flex;
@@ -73,7 +73,7 @@ export const HomeContainer = styled.div`
       align-items: center;
       h1 {
         font-family: Nunito;
-        font-size: 20px;
+        font-size: 26px;
         font-weight: bold;
         text-align: center;
         color: #e18f2d;
@@ -83,6 +83,7 @@ export const HomeContainer = styled.div`
       height: 100%;
       min-height: 61px;
       display: flex;
+      justify-content: center;
       .middle-stories-wrapper {
         min-height: 250px;
         display: flex;
@@ -108,11 +109,57 @@ export const HomeContainer = styled.div`
     }
   }
   .Bottom-Container {
-    flex: 1;
-    background-color: orange;
+    min-height: 488px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .bottom-title-content {
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        text-align: center;
+        font-family: Nunito;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+        color: #e1902d;
+        padding-top: 5%;
+      }
+    }
+    .bottom-p-content {
+      margin-top: 5%;
+      .bottom-p-wrapper {
+        p {
+          text-align: center;
+          font-family: Nunito;
+          font-size: 20px;
+          color: #5e5e5e;
+          margin: 0 15%;
+        }
+      }
+    }
+    .btn-content {
+      display: flex;
+      justify-content: center;
+      margin: 5% 0;
+      .btn-wrapper {
+        width: 50%;
+        display: flex;
+      }
+    }
   }
   @media (max-width: 631px) {
     height: 300vh;
+    .btn-content {
+      height: 25%;
+      .btn-wrapper {
+        flex-direction: column;
+        align-items: center;
+        min-width: 0;
+      }
+    }
     .Top-Container {
       height: 100vh;
       .logo-content {
@@ -124,14 +171,6 @@ export const HomeContainer = styled.div`
       .p-content {
         .p-wrapper {
           min-width: 345px;
-        }
-      }
-      .btn-content {
-        height: 25%;
-        .btn-wrapper {
-          flex-direction: column;
-          align-items: center;
-          min-width: 0;
         }
       }
     }
@@ -151,6 +190,11 @@ export const HomeContainer = styled.div`
             margin: 0 25px;
           }
         }
+      }
+    }
+    .Bottom-Container {
+      .btn-content {
+        height: 200px;
       }
     }
   }
