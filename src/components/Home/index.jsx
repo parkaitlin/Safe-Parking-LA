@@ -8,14 +8,14 @@ import logo from '../../assets/img/logo.png'
 const Home = () => {
   return (
     <HomeContainer>
-      <div className='Top-Container'>
-        <div className='logo-content'>
-          <div className='logo-wrapper'>
+      <div className='Top-Container Container-Settings'>
+        <div className='logo-content content-alignment'>
+          <div className='logo-wrapper wrapper-alignment'>
             <img src={logo} alt='logo' />
           </div>
         </div>
-        <div className='p-content'>
-          <div className='p-wrapper'>
+        <div className='p-content content-alignment'>
+          <div className='p-wrapper wrapper-alignment'>
             <p>
               Safe Parking LA provides a safe and legal intervention for people
               experiencing homelessness who are living in their vehicles.
@@ -31,8 +31,8 @@ const Home = () => {
             <p>We are here to help.</p>
           </div>
         </div>
-        <div className='btn-content'>
-          <div className='btn-wrapper'>
+        <div className='btn-content content-alignment'>
+          <div className='btn-wrapper wrapper-alignment'>
             <button>Apply To Park</button>
             <button>Additional Resources</button>
           </div>

@@ -5,48 +5,44 @@ export const HomeContainer = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: column;
+  .Container-Settings {
+    .content-alignment {
+      display: flex;
+      justify-content: center;
+      .wrapper-alignment {
+        display: flex;
+        width: 50%;
+        min-width: 627.5px;
+      }
+    }
+  }
   .Top-Container {
     flex: 1.25;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     .logo-content {
-      display: flex;
-      justify-content: center;
       .logo-wrapper {
-        display: flex;
-        justify-content: center;
-        width: 50%;
-        min-width: 627.5px;
         max-width: 928px;
+        justify-content: center;
       }
     }
     .p-content {
-      display: flex;
-      justify-content: center;
-      font-family: Nunito;
-      font-size: 20px;
       .p-wrapper {
-        display: flex;
+        max-width: 928px;
         flex-direction: column;
         justify-content: space-evenly;
-        width: 50%;
-        max-width: 928px;
-        min-width: 627.5px;
         height: 100%;
         p {
+          font-family: Nunito;
+          font-size: 20px;
           text-align: center;
         }
       }
     }
     .btn-content {
-      display: flex;
-      justify-content: center;
       .btn-wrapper {
-        width: 50%;
-        min-width: 627.5px;
         max-width: 928px;
-        display: flex;
         justify-content: space-evenly;
         button {
           width: 180px;
