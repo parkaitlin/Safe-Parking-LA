@@ -1,1 +1,1 @@
-https://safe-parking-la.herokuapp.com/
+https://safeparkinglosangeles.herokuapp.com/
